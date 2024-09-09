@@ -1,3 +1,0 @@
-model_checkpoint_path: "model"
-all_model_checkpoint_paths: "../rl_restore_ckpt_with_source_seq/model"
-all_model_checkpoint_paths: "model"
