@@ -65,7 +65,7 @@ custom_config = DataConfig(embed_size=128,
 
 ### Quick Start
 
-Modify the content in line `917` of `main.py` to run different dataset:
+Modify the content in line `921` of `main.py` to run different dataset:
 
 ```python
 data_config = get_data_config('atis', trainset='train', devset='dev', testset='test')
@@ -82,10 +82,10 @@ python main.py --mode train
 
 The model checkpoints are saved in the directory `ckpt_with_source_seq4/` and `rl_restore_ckpt_with_source_seq4/`.
 
-See the log file through:
+<!-- See the log file through:
 ```bash
 vim ../data/atis_asdl_original_json_tree_with_type&seq3/tree2seq_copy_output/iter_eval4.log
-```
+``` -->
 
 #### Testing
 
