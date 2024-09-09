@@ -1,0 +1,5 @@
+var
+ent
+num
+var_type
+pred

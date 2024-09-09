@@ -1,0 +1,32 @@
+2024-09-09 19:16:17.793838: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+WARNING:tensorflow:From main.py:3: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From main.py:934: The name tf.random.set_random_seed is deprecated. Please use tf.compat.v1.random.set_random_seed instead.
+
+Training Mode Starts !
+get primitive_types: []
+Traceback (most recent call last):
+  File "main.py", line 938, in <module>
+    train_dataset, dev_dataset = prepare_train_data(params)
+  File "main.py", line 99, in prepare_train_data
+    train_trees, train_seqs, train_tree_seqs = prepare_data(params.train_file,
+  File "/amax/storage/nfs/dmirvpcctrl/lzh/code/TAG_v2/model/data_utils.py", line 37, in prepare_data
+    js = json.load(open(file_path, "r", encoding="utf-8"))
+  File "/home/amax/.conda/envs/SDGNN/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/amax/.conda/envs/SDGNN/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/amax/.conda/envs/SDGNN/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/amax/.conda/envs/SDGNN/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+KeyboardInterrupt

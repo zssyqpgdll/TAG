@@ -1,0 +1,8 @@
+OTHER	0
+expr	1
+var	2
+pred	3
+ent	4
+var_type	5
+cmp_op	6
+num	7

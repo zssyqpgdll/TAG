@@ -1,0 +1,6 @@
+identifier
+int
+string
+bytes
+object
+singleton

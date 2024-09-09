@@ -1,0 +1,11 @@
+train max tree depths: 17
+train avg tree node count: 21.941587731168244
+train max child num: 16
+
+dev max tree depths: 10
+dev avg tree node count: 22.032586558044805
+dev max child num: 9
+
+test max tree depths: 11
+test avg tree node count: 19.198660714285715
+test max child num: 10

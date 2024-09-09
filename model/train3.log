@@ -1,0 +1,3374 @@
+nohup: ignoring input
+2024-09-09 19:18:57.242351: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+WARNING:tensorflow:From main.py:3: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From main.py:934: The name tf.random.set_random_seed is deprecated. Please use tf.compat.v1.random.set_random_seed instead.
+
+Training Mode Starts !
+get primitive_types: []
+56355
+train set-max-len: 53
+in trainset target seq replaced word count max: 22
+in trainset target seq replaced word count min: 0
+saving input data to file:../data/wikisql_asdl_original_json_tree_with_type&seq3/tree2seq_copy_output/input4
+8421
+dev set-max-len: 55
+in devset target seq replaced word count max: 34
+in devset target seq replaced word count min: 0
+saving input data to file:../data/wikisql_asdl_original_json_tree_with_type&seq3/tree2seq_copy_output/input4
+type vocab size: 7
+type vocab: {'OTHER': 0, 'cmp_op': 1, 'column_name': 2, 'cond_expr': 3, 'string': 4, 'agg_op': 5, 'stmt': 6}
+get primitive_type_ids: []
+add 7287 words unknown tree word in s_word2idx (devset): 
+seq_with_tree_in_seq_unk_vocab_size: 14722
+src vocab size: 11416
+tgt vocab size: 7435
+WARNING:tensorflow:From /amax/storage/nfs/dmirvpcctrl/lzh/code/TAG_v2/model/tree2seq_with_attn_v2.py:1477: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /amax/storage/nfs/dmirvpcctrl/lzh/code/TAG_v2/model/tree2seq_with_attn_v2.py:1481: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+create unbidirectional lstm
+WARNING:tensorflow:From /amax/storage/nfs/dmirvpcctrl/lzh/code/TAG_v2/model/tree2seq_with_attn_v2.py:1500: The name tf.layers.Dense is deprecated. Please use tf.compat.v1.layers.Dense instead.
+
+WARNING:tensorflow:From /amax/storage/nfs/dmirvpcctrl/lzh/code/TAG_v2/model/tree2seq_with_attn_v2.py:1552: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+Tensor("map/while/while/TensorArrayStack/TensorArrayGatherV3:0", shape=(?, 2, 128), dtype=float32)
+WARNING:tensorflow:From /amax/storage/nfs/dmirvpcctrl/lzh/code/TAG_v2/model/tree2seq_with_attn_v2.py:1890: The name tf.nn.rnn_cell.LSTMStateTuple is deprecated. Please use tf.compat.v1.nn.rnn_cell.LSTMStateTuple instead.
+
+choose normal copy action !
+sample_ids: Tensor("decoder_1/while/BasicDecoderStep/ArgMax:0", shape=(?,), dtype=int32)
+WARNING:tensorflow:From /amax/storage/nfs/dmirvpcctrl/lzh/code/TAG_v2/model/decode_utils.py:502: The name tf.log is deprecated. Please use tf.math.log instead.
+
+train maxing MLE loss and RL loss...
+WARNING:tensorflow:From /amax/storage/nfs/dmirvpcctrl/lzh/code/TAG_v2/model/tree2seq_with_attn_v2.py:2226: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+WARNING:tensorflow:From /amax/storage/nfs/dmirvpcctrl/lzh/code/TAG_v2/model/tree2seq_with_attn_v2.py:2244: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From main.py:504: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+<tf.Variable 'embedding/src_embeddings:0' shape=(11415, 128) dtype=float32_ref>
+<tf.Variable 'embedding/tgt_embeddings:0' shape=(7434, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_input_gate/Wx:0' shape=(128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_input_gate/Uhs:0' shape=(4, 128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_0/Wx:0' shape=(128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_0/Uhs:0' shape=(4, 128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_0/gate_bias:0' shape=(128,) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_1/Wx:0' shape=(128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_1/Uhs:0' shape=(4, 128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_1/gate_bias:0' shape=(128,) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_2/Wx:0' shape=(128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_2/Uhs:0' shape=(4, 128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_2/gate_bias:0' shape=(128,) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_3/Wx:0' shape=(128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_3/Uhs:0' shape=(4, 128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_child_forget_gate_3/gate_bias:0' shape=(128,) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_output_gate/Wx:0' shape=(128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_output_gate/Uhs:0' shape=(4, 128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_tmp_c/Wx:0' shape=(128, 128) dtype=float32_ref>
+<tf.Variable 'encoder/tree_pattern_encoder_tmp_c/Uhs:0' shape=(4, 128, 128) dtype=float32_ref>
+<tf.Variable 'rnn/encode_lstm_cell/kernel:0' shape=(256, 512) dtype=float32_ref>
+<tf.Variable 'rnn/encode_lstm_cell/bias:0' shape=(512,) dtype=float32_ref>
+<tf.Variable 'rnn/tree_seq_lstm_cell/kernel:0' shape=(256, 512) dtype=float32_ref>
+<tf.Variable 'rnn/tree_seq_lstm_cell/bias:0' shape=(512,) dtype=float32_ref>
+<tf.Variable 'combine_tree_dense_h/kernel:0' shape=(256, 128) dtype=float32_ref>
+<tf.Variable 'combine_tree_dense_h/bias:0' shape=(128,) dtype=float32_ref>
+<tf.Variable 'combine_tree_dense_c/kernel:0' shape=(256, 128) dtype=float32_ref>
+<tf.Variable 'combine_tree_dense_c/bias:0' shape=(128,) dtype=float32_ref>
+<tf.Variable 'memory_layer/kernel:0' shape=(128, 128) dtype=float32_ref>
+<tf.Variable 'decoder_1/attention_wrapper/decode_lstm_cell/kernel:0' shape=(384, 512) dtype=float32_ref>
+<tf.Variable 'decoder_1/attention_wrapper/decode_lstm_cell/bias:0' shape=(512,) dtype=float32_ref>
+<tf.Variable 'decoder_1/attention_wrapper/attention_layer/kernel:0' shape=(256, 128) dtype=float32_ref>
+<tf.Variable 'decoder_1/copy_vocab_probs_layer/kernel:0' shape=(128, 2) dtype=float32_ref>
+<tf.Variable 'decoder_1/copy_vocab_probs_layer/bias:0' shape=(2,) dtype=float32_ref>
+<tf.Variable 'decoder_1/projection_layer/kernel:0' shape=(128, 7435) dtype=float32_ref>
+<tf.Variable 'decoder_1/projection_layer/bias:0' shape=(7435,) dtype=float32_ref>
+WARNING:tensorflow:From main.py:528: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2024-09-09 19:19:26.584661: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2024-09-09 19:19:26.586439: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x511d300 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-09-09 19:19:26.586482: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-09-09 19:19:26.588945: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2024-09-09 19:19:26.706172: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x50de800 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-09-09 19:19:26.706227: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce RTX 3090, Compute Capability 8.6
+2024-09-09 19:19:26.706755: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1665] Found device 0 with properties: 
+name: NVIDIA GeForce RTX 3090 major: 8 minor: 6 memoryClockRate(GHz): 1.695
+pciBusID: 0000:41:00.0
+2024-09-09 19:19:26.706817: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-09-09 19:19:26.710280: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-09-09 19:19:26.711461: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-09-09 19:19:26.711761: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-09-09 19:19:26.752458: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2024-09-09 19:19:26.753516: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-09-09 19:19:26.753748: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-09-09 19:19:26.754608: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1793] Adding visible gpu devices: 0
+2024-09-09 19:19:26.754671: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-09-09 19:19:27.130129: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1206] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-09-09 19:19:27.130207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212]      0 
+2024-09-09 19:19:27.130225: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 0:   N 
+2024-09-09 19:19:27.131270: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22353 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3090, pci bus id: 0000:41:00.0, compute capability: 8.6)
+WARNING:tensorflow:From main.py:532: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2024-09-09 19:19:27.134729: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1665] Found device 0 with properties: 
+name: NVIDIA GeForce RTX 3090 major: 8 minor: 6 memoryClockRate(GHz): 1.695
+pciBusID: 0000:41:00.0
+2024-09-09 19:19:27.134785: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-09-09 19:19:27.134831: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-09-09 19:19:27.134857: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-09-09 19:19:27.134873: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-09-09 19:19:27.134891: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2024-09-09 19:19:27.134911: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-09-09 19:19:27.134929: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-09-09 19:19:27.135629: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1793] Adding visible gpu devices: 0
+2024-09-09 19:19:27.135663: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1206] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-09-09 19:19:27.135672: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212]      0 
+2024-09-09 19:19:27.135679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 0:   N 
+2024-09-09 19:19:27.136319: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22353 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3090, pci bus id: 0000:41:00.0, compute capability: 8.6)
+WARNING:tensorflow:From main.py:542: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+=========================
+=========================
+=========================
+
+
+
+
+
+
+RL Training Start !
+2024-09-09 19:19:29.747628: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+copy probs min: 0
+copy probs max: 0.0999618396
+correspond_copy_vocab_probs: [0.500181794 0.499818176]
+correspond vocab gen prob (copy min): 6.7101726e-05
+correspond vocab gen prob (copy max): 6.72719107e-05
+copy probs max: 0.0999618396
+copy probs min: 0
+correspond_copy_vocab_probs: [0.500181794 0.499818176]
+correspond vocab gen prob (copy max): 6.72719107e-05
+correspond vocab gen prob (copy min): 6.7101726e-05
+Epoch1-train_step1-loss=30.057369
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0547782257
+copy probs min: 0
+correspond_copy_vocab_probs: [0.507009566 0.492990434]
+correspond vocab gen prob (copy max): 6.82393365e-05
+correspond vocab gen prob (copy min): 6.84623665e-05
+copy probs max: 0.0547782257
+copy probs min: 0
+correspond_copy_vocab_probs: [0.507009566 0.492990434]
+correspond vocab gen prob (copy max): 6.82393365e-05
+correspond vocab gen prob (copy min): 6.84623665e-05
+Epoch1-train_step2-loss=27.831202
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.0537972189
+correspond_copy_vocab_probs: [0.515835762 0.484164268]
+correspond vocab gen prob (copy max): 6.93392649e-05
+correspond vocab gen prob (copy min): 6.98693111e-05
+copy probs min: 0
+copy probs max: 0.0537972189
+correspond_copy_vocab_probs: [0.515835762 0.484164268]
+correspond vocab gen prob (copy max): 6.93392649e-05
+correspond vocab gen prob (copy min): 6.98693111e-05
+Epoch1-train_step3-loss=27.213594
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0520158932
+copy probs min: 0
+correspond_copy_vocab_probs: [0.531861305 0.468138665]
+correspond vocab gen prob (copy max): 7.15284623e-05
+correspond vocab gen prob (copy min): 7.2196e-05
+copy probs min: 0
+copy probs max: 0.0520158932
+correspond_copy_vocab_probs: [0.531861305 0.468138665]
+correspond vocab gen prob (copy max): 7.15284623e-05
+correspond vocab gen prob (copy min): 7.2196e-05
+Epoch1-train_step4-loss=28.391714
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0495721437
+copy probs min: 0
+correspond vocab gen prob (copy max): 7.42348639e-05
+correspond vocab gen prob (copy min): 7.54438734e-05
+correspond_copy_vocab_probs: [0.553854942 0.446145087]
+copy probs max: 0.0495721437
+copy probs min: 0
+correspond_copy_vocab_probs: [0.553854942 0.446145087]
+correspond vocab gen prob (copy max): 7.42348639e-05
+correspond vocab gen prob (copy min): 7.54438734e-05
+Epoch1-train_step5-loss=29.094528
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.0758601427
+correspond_copy_vocab_probs: [0.620681643 0.379318327]
+correspond vocab gen prob (copy max): 8.36221734e-05
+correspond vocab gen prob (copy min): 8.2123981e-05
+copy probs max: 0.0758601427
+copy probs min: 0
+correspond_copy_vocab_probs: [0.620681643 0.379318327]
+correspond vocab gen prob (copy max): 8.36221734e-05
+correspond vocab gen prob (copy min): 8.2123981e-05
+Epoch1-train_step6-loss=30.455349
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0420619808
+copy probs min: 0
+correspond_copy_vocab_probs: [0.621586382 0.378413618]
+correspond vocab gen prob (copy max): 8.3423467e-05
+correspond vocab gen prob (copy min): 8.79611471e-05
+copy probs min: 0
+copy probs max: 0.0420619808
+correspond_copy_vocab_probs: [0.621586382 0.378413618]
+correspond vocab gen prob (copy min): 8.79611471e-05
+correspond vocab gen prob (copy max): 8.3423467e-05
+Epoch1-train_step7-loss=30.560066
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.036626935
+copy probs min: 0
+correspond_copy_vocab_probs: [0.670761108 0.329238862]
+correspond vocab gen prob (copy max): 8.94640107e-05
+correspond vocab gen prob (copy min): 9.28281806e-05
+copy probs max: 0.036626935
+copy probs min: 0
+correspond_copy_vocab_probs: [0.670761108 0.329238862]
+correspond vocab gen prob (copy max): 8.94640107e-05
+correspond vocab gen prob (copy min): 9.28281806e-05
+Epoch1-train_step8-loss=28.420998
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0648112372
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.000100920231
+correspond_copy_vocab_probs: [0.676413894 0.323586136]
+correspond vocab gen prob (copy max): 9.73019414e-05
+copy probs max: 0.0648112372
+copy probs min: 0
+correspond_copy_vocab_probs: [0.676413894 0.323586136]
+correspond vocab gen prob (copy max): 9.73019414e-05
+correspond vocab gen prob (copy min): 0.000100920231
+Epoch1-train_step9-loss=25.920206
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0629986227
+copy probs min: 0
+correspond_copy_vocab_probs: [0.685554147 0.314445823]
+correspond vocab gen prob (copy max): 0.000100351077
+correspond vocab gen prob (copy min): 0.000106905922
+copy probs max: 0.0629986227
+copy probs min: 0
+correspond_copy_vocab_probs: [0.685554147 0.314445823]
+correspond vocab gen prob (copy max): 0.000100351077
+correspond vocab gen prob (copy min): 0.000106905922
+Epoch1-train_step10-loss=27.808521
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0385360196
+copy probs min: 0
+correspond_copy_vocab_probs: [0.653965533 0.346034467]
+correspond vocab gen prob (copy max): 8.78113278e-05
+correspond vocab gen prob (copy min): 0.000117219512
+copy probs min: 0
+copy probs max: 0.0385360196
+correspond_copy_vocab_probs: [0.653965533 0.346034467]
+correspond vocab gen prob (copy max): 8.78113278e-05
+correspond vocab gen prob (copy min): 0.000117219512
+Epoch1-train_step11-loss=26.494961
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0612928383
+copy probs min: 0
+correspond_copy_vocab_probs: [0.694823921 0.305176109]
+correspond vocab gen prob (copy max): 0.000106620624
+correspond vocab gen prob (copy min): 0.000132740519
+copy probs min: 0
+copy probs max: 0.0612928383
+correspond_copy_vocab_probs: [0.694823921 0.305176109]
+correspond vocab gen prob (copy max): 0.000106620624
+correspond vocab gen prob (copy min): 0.000132740519
+Epoch1-train_step12-loss=26.621719
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.0651198849
+correspond_copy_vocab_probs: [0.676121056 0.323878974]
+correspond vocab gen prob (copy max): 9.0149013e-05
+correspond vocab gen prob (copy min): 0.000156209542
+copy probs max: 0.0651198849
+copy probs min: 0
+correspond_copy_vocab_probs: [0.676121056 0.323878974]
+correspond vocab gen prob (copy max): 9.0149013e-05
+correspond vocab gen prob (copy min): 0.000156209542
+Epoch1-train_step13-loss=29.296829
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.065650478
+copy probs min: 0
+correspond_copy_vocab_probs: [0.674774885 0.325225085]
+correspond vocab gen prob (copy max): 9.16530262e-05
+correspond vocab gen prob (copy min): 0.000180599935
+copy probs min: 0
+copy probs max: 0.065650478
+correspond_copy_vocab_probs: [0.674774885 0.325225085]
+correspond vocab gen prob (copy max): 9.16530262e-05
+correspond vocab gen prob (copy min): 0.000180599935
+Epoch1-train_step14-loss=28.168684
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0348597877
+copy probs min: 0
+correspond_copy_vocab_probs: [0.69529897 0.30470109]
+correspond vocab gen prob (copy max): 8.83814282e-05
+correspond vocab gen prob (copy min): 0.000210609069
+copy probs max: 0.0348597877
+copy probs min: 0
+correspond_copy_vocab_probs: [0.69529897 0.30470109]
+correspond vocab gen prob (copy max): 8.83814282e-05
+correspond vocab gen prob (copy min): 0.000210609069
+Epoch1-train_step15-loss=27.500153
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.034879107
+correspond vocab gen prob (copy max): 0.000106715583
+correspond_copy_vocab_probs: [0.775558412 0.224441618]
+correspond vocab gen prob (copy min): 0.000368457637
+copy probs min: 0
+copy probs max: 0.034879107
+correspond_copy_vocab_probs: [0.775558412 0.224441618]
+correspond vocab gen prob (copy max): 0.000106715583
+correspond vocab gen prob (copy min): 0.000368457637
+Epoch1-train_step16-loss=29.742172
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0318561
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.000108351815
+correspond_copy_vocab_probs: [0.744870842 0.255129158]
+correspond vocab gen prob (copy min): 0.000326783629
+copy probs max: 0.0318561
+copy probs min: 0
+correspond_copy_vocab_probs: [0.744870842 0.255129158]
+correspond vocab gen prob (copy max): 0.000108351815
+correspond vocab gen prob (copy min): 0.000326783629
+Epoch1-train_step17-loss=25.980991
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0461889468
+copy probs min: 0
+correspond_copy_vocab_probs: [0.790282905 0.209717095]
+correspond vocab gen prob (copy max): 9.75473304e-05
+correspond vocab gen prob (copy min): 0.00135647226
+copy probs max: 0.0461889468
+copy probs min: 0
+correspond_copy_vocab_probs: [0.790282905 0.209717095]
+correspond vocab gen prob (copy max): 9.75473304e-05
+correspond vocab gen prob (copy min): 0.00135647226
+Epoch1-train_step18-loss=29.469259
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.0605842918
+correspond_copy_vocab_probs: [0.745879769 0.254120231]
+correspond vocab gen prob (copy max): 0.000152887835
+correspond vocab gen prob (copy min): 0.00149578892
+copy probs max: 0.0605842918
+copy probs min: 0
+correspond_copy_vocab_probs: [0.745879769 0.254120231]
+correspond vocab gen prob (copy max): 0.000152887835
+correspond vocab gen prob (copy min): 0.00149578892
+Epoch1-train_step19-loss=22.556467
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0475844592
+copy probs min: 0
+correspond vocab gen prob (copy max): 9.71285044e-05
+correspond_copy_vocab_probs: [0.715934098 0.284065872]
+correspond vocab gen prob (copy min): 0.00568112917
+copy probs max: 0.0475844592
+copy probs min: 0
+correspond_copy_vocab_probs: [0.715934098 0.284065872]
+correspond vocab gen prob (copy min): 0.00568112917
+correspond vocab gen prob (copy max): 9.71285044e-05
+Epoch1-train_step20-loss=25.181248
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.057769347
+correspond_copy_vocab_probs: [0.699246585 0.300753444]
+correspond vocab gen prob (copy max): 0.00122105808
+correspond vocab gen prob (copy min): 0.00524748815
+copy probs min: 0
+copy probs max: 0.057769347
+correspond_copy_vocab_probs: [0.699246585 0.300753444]
+correspond vocab gen prob (copy max): 0.00122105808
+correspond vocab gen prob (copy min): 0.00524748815
+Epoch1-train_step21-loss=22.199209
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.0720151
+copy probs min: 0
+correspond_copy_vocab_probs: [0.691727698 0.308272362]
+correspond vocab gen prob (copy max): 7.59491813e-05
+correspond vocab gen prob (copy min): 0.00776570896
+copy probs max: 0.0720151
+copy probs min: 0
+correspond_copy_vocab_probs: [0.691727698 0.308272362]
+correspond vocab gen prob (copy max): 7.59491813e-05
+correspond vocab gen prob (copy min): 0.00776570896
+Epoch1-train_step22-loss=18.536760
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.0903262794
+correspond vocab gen prob (copy max): 0.00425896561
+correspond_copy_vocab_probs: [0.672195256 0.327804774]
+correspond vocab gen prob (copy min): 0.00016934314
+copy probs min: 0
+copy probs max: 0.0903262794
+correspond_copy_vocab_probs: [0.672195256 0.327804774]
+correspond vocab gen prob (copy max): 0.00425896561
+correspond vocab gen prob (copy min): 0.00016934314
+Epoch1-train_step23-loss=17.502769
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.170569107
+correspond_copy_vocab_probs: [0.621788502 0.378211498]
+correspond vocab gen prob (copy max): 3.07842129e-05
+correspond vocab gen prob (copy min): 0.0137817962
+copy probs max: 0.170569107
+copy probs min: 0
+correspond_copy_vocab_probs: [0.621788502 0.378211498]
+correspond vocab gen prob (copy max): 3.07842129e-05
+correspond vocab gen prob (copy min): 0.0137817962
+Epoch1-train_step24-loss=17.276226
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.144894734
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.0113127455
+correspond_copy_vocab_probs: [0.643661439 0.356338561]
+correspond vocab gen prob (copy min): 0.00879079569
+copy probs max: 0.144894734
+copy probs min: 0
+correspond_copy_vocab_probs: [0.643661439 0.356338561]
+correspond vocab gen prob (copy max): 0.0113127455
+correspond vocab gen prob (copy min): 0.00879079569
+Epoch1-train_step25-loss=15.400249
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.148597494
+copy probs min: 0
+correspond_copy_vocab_probs: [0.633329332 0.366670609]
+correspond vocab gen prob (copy max): 0.0116528627
+correspond vocab gen prob (copy min): 0.0349657945
+copy probs max: 0.148597494
+copy probs min: 0
+correspond_copy_vocab_probs: [0.633329332 0.366670609]
+correspond vocab gen prob (copy max): 0.0116528627
+correspond vocab gen prob (copy min): 0.0349657945
+Epoch1-train_step26-loss=12.956972
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.187924787
+correspond_copy_vocab_probs: [0.630931795 0.369068205]
+correspond vocab gen prob (copy max): 0.00965733174
+correspond vocab gen prob (copy min): 0.0313402899
+copy probs max: 0.187924787
+copy probs min: 0
+correspond_copy_vocab_probs: [0.630931795 0.369068205]
+correspond vocab gen prob (copy max): 0.00965733174
+correspond vocab gen prob (copy min): 0.0313402899
+Epoch1-train_step27-loss=13.876720
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.205823183
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.00712351082
+correspond_copy_vocab_probs: [0.654136837 0.345863163]
+correspond vocab gen prob (copy min): 0.0387989283
+copy probs max: 0.205823183
+copy probs min: 0
+correspond_copy_vocab_probs: [0.654136837 0.345863163]
+correspond vocab gen prob (copy max): 0.00712351082
+correspond vocab gen prob (copy min): 0.0387989283
+Epoch1-train_step28-loss=17.192150
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.405074805
+correspond_copy_vocab_probs: [0.351052076 0.648947954]
+correspond vocab gen prob (copy max): 0.0028800224
+correspond vocab gen prob (copy min): 0.0502428934
+copy probs max: 0.405074805
+copy probs min: 0
+correspond_copy_vocab_probs: [0.351052076 0.648947954]
+correspond vocab gen prob (copy max): 0.0028800224
+correspond vocab gen prob (copy min): 0.0502428934
+Epoch1-train_step29-loss=17.320505
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.346709371
+correspond_copy_vocab_probs: [0.630256653 0.369743317]
+correspond vocab gen prob (copy max): 0.00164981512
+correspond vocab gen prob (copy min): 0.0696366355
+copy probs max: 0.346709371
+copy probs min: 0
+correspond_copy_vocab_probs: [0.630256653 0.369743317]
+correspond vocab gen prob (copy max): 0.00164981512
+correspond vocab gen prob (copy min): 0.0696366355
+Epoch1-train_step30-loss=15.067984
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.104307711
+copy probs min: 0
+correspond_copy_vocab_probs: [0.836745441 0.163254544]
+correspond vocab gen prob (copy min): 0.0167069323
+correspond vocab gen prob (copy max): 0.00434324238
+copy probs max: 0.104307711
+copy probs min: 0
+correspond_copy_vocab_probs: [0.836745441 0.163254544]
+correspond vocab gen prob (copy max): 0.00434324238
+correspond vocab gen prob (copy min): 0.0167069323
+Epoch1-train_step31-loss=16.117207
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.267030239
+correspond_copy_vocab_probs: [0.717207849 0.282792151]
+correspond vocab gen prob (copy max): 0.00369832455
+correspond vocab gen prob (copy min): 0.137250334
+copy probs min: 0
+copy probs max: 0.267030239
+correspond_copy_vocab_probs: [0.717207849 0.282792151]
+correspond vocab gen prob (copy max): 0.00369832455
+correspond vocab gen prob (copy min): 0.137250334
+Epoch1-train_step32-loss=13.684829
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.270250201
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0106888134
+correspond vocab gen prob (copy max): 0.00254287501
+correspond_copy_vocab_probs: [0.59380722 0.406192809]
+copy probs max: 0.270250201
+copy probs min: 0
+correspond_copy_vocab_probs: [0.59380722 0.406192809]
+correspond vocab gen prob (copy max): 0.00254287501
+correspond vocab gen prob (copy min): 0.0106888134
+Epoch1-train_step33-loss=12.879862
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.290610969
+copy probs min: 0
+correspond_copy_vocab_probs: [0.42078644 0.57921356]
+correspond vocab gen prob (copy max): 0.00167410832
+correspond vocab gen prob (copy min): 0.19954209
+copy probs min: 0
+copy probs max: 0.290610969
+correspond_copy_vocab_probs: [0.42078644 0.57921356]
+correspond vocab gen prob (copy max): 0.00167410832
+correspond vocab gen prob (copy min): 0.19954209
+Epoch1-train_step34-loss=14.636036
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.257986099
+copy probs min: 0
+correspond_copy_vocab_probs: [0.514443278 0.485556722]
+correspond vocab gen prob (copy max): 2.14390727e-08
+correspond vocab gen prob (copy min): 0.23709856
+copy probs max: 0.257986099
+copy probs min: 0
+correspond_copy_vocab_probs: [0.514443278 0.485556722]
+correspond vocab gen prob (copy min): 0.23709856
+correspond vocab gen prob (copy max): 2.14390727e-08
+Epoch1-train_step35-loss=14.180554
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.139392227
+correspond vocab gen prob (copy max): 2.46969807e-06
+correspond vocab gen prob (copy min): 0.0175804812
+correspond_copy_vocab_probs: [0.721629262 0.278370768]
+copy probs max: 0.139392227
+copy probs min: 0
+correspond_copy_vocab_probs: [0.721629262 0.278370768]
+correspond vocab gen prob (copy max): 2.46969807e-06
+correspond vocab gen prob (copy min): 0.0175804812
+Epoch1-train_step36-loss=16.510786
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.13028945
+correspond_copy_vocab_probs: [0.789395392 0.210604638]
+correspond vocab gen prob (copy max): 5.12598355e-08
+correspond vocab gen prob (copy min): 0.242904142
+copy probs max: 0.13028945
+copy probs min: 0
+correspond_copy_vocab_probs: [0.789395392 0.210604638]
+correspond vocab gen prob (copy max): 5.12598355e-08
+correspond vocab gen prob (copy min): 0.242904142
+Epoch1-train_step37-loss=15.185247
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.115074478
+copy probs min: 0
+correspond_copy_vocab_probs: [0.748618841 0.251381189]
+correspond vocab gen prob (copy max): 2.01051932e-07
+correspond vocab gen prob (copy min): 0.230290502
+copy probs min: 0
+copy probs max: 0.115074478
+correspond_copy_vocab_probs: [0.748618841 0.251381189]
+correspond vocab gen prob (copy max): 2.01051932e-07
+correspond vocab gen prob (copy min): 0.230290502
+Epoch1-train_step38-loss=12.544839
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.20890592
+copy probs min: 0
+correspond vocab gen prob (copy max): 4.72655337e-08
+correspond vocab gen prob (copy min): 0.0236707814
+correspond_copy_vocab_probs: [0.616386 0.383614033]
+copy probs max: 0.20890592
+copy probs min: 0
+correspond_copy_vocab_probs: [0.616386 0.383614033]
+correspond vocab gen prob (copy max): 4.72655337e-08
+correspond vocab gen prob (copy min): 0.0236707814
+Epoch1-train_step39-loss=13.631016
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.237488523
+copy probs min: 0
+correspond_copy_vocab_probs: [0.560020149 0.439979881]
+correspond vocab gen prob (copy max): 2.22089e-08
+correspond vocab gen prob (copy min): 0.0371052064
+copy probs max: 0.237488523
+copy probs min: 0
+correspond_copy_vocab_probs: [0.560020149 0.439979881]
+correspond vocab gen prob (copy max): 2.22089e-08
+correspond vocab gen prob (copy min): 0.0371052064
+Epoch1-train_step40-loss=13.424604
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.190933511
+copy probs min: 0
+correspond_copy_vocab_probs: [0.554404616 0.445595384]
+correspond vocab gen prob (copy max): 4.45473667e-08
+correspond vocab gen prob (copy min): 0.186947152
+copy probs min: 0
+copy probs max: 0.190933511
+correspond_copy_vocab_probs: [0.554404616 0.445595384]
+correspond vocab gen prob (copy max): 4.45473667e-08
+correspond vocab gen prob (copy min): 0.186947152
+Epoch1-train_step41-loss=15.315232
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.16985172
+copy probs min: 0
+correspond_copy_vocab_probs: [0.643523276 0.356476754]
+correspond vocab gen prob (copy max): 6.43471338e-08
+correspond vocab gen prob (copy min): 0.173414767
+copy probs max: 0.16985172
+copy probs min: 0
+correspond_copy_vocab_probs: [0.643523276 0.356476754]
+correspond vocab gen prob (copy max): 6.43471338e-08
+correspond vocab gen prob (copy min): 0.173414767
+Epoch1-train_step42-loss=12.563972
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.144963011
+copy probs min: 0
+correspond vocab gen prob (copy max): 1.0515172e-07
+correspond_copy_vocab_probs: [0.727205932 0.272794068]
+correspond vocab gen prob (copy min): 0.167785451
+copy probs max: 0.144963011
+copy probs min: 0
+correspond_copy_vocab_probs: [0.727205932 0.272794068]
+correspond vocab gen prob (copy max): 1.0515172e-07
+correspond vocab gen prob (copy min): 0.167785451
+Epoch1-train_step43-loss=13.063903
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.147592545
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0128253
+correspond_copy_vocab_probs: [0.754340947 0.245659053]
+correspond vocab gen prob (copy max): 9.19422e-08
+copy probs min: 0
+copy probs max: 0.147592545
+correspond_copy_vocab_probs: [0.754340947 0.245659053]
+correspond vocab gen prob (copy max): 9.19422e-08
+correspond vocab gen prob (copy min): 0.0128253
+Epoch1-train_step44-loss=12.737591
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.161902472
+correspond vocab gen prob (copy min): 0.159380585
+correspond vocab gen prob (copy max): 1.23439747e-07
+correspond_copy_vocab_probs: [0.71234256 0.28765744]
+copy probs max: 0.161902472
+copy probs min: 0
+correspond vocab gen prob (copy max): 1.23439747e-07
+correspond_copy_vocab_probs: [0.71234256 0.28765744]
+correspond vocab gen prob (copy min): 0.159380585
+Epoch1-train_step45-loss=14.756527
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.167449102
+copy probs min: 0
+correspond_copy_vocab_probs: [0.628519177 0.371480823]
+correspond vocab gen prob (copy max): 7.16023294e-08
+correspond vocab gen prob (copy min): 0.160349041
+copy probs min: 0
+copy probs max: 0.167449102
+correspond_copy_vocab_probs: [0.628519177 0.371480823]
+correspond vocab gen prob (copy max): 7.16023294e-08
+correspond vocab gen prob (copy min): 0.160349041
+Epoch1-train_step46-loss=12.156194
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.240398034
+copy probs min: 0
+correspond_copy_vocab_probs: [0.528561831 0.471438169]
+correspond vocab gen prob (copy max): 4.7466834e-08
+correspond vocab gen prob (copy min): 0.163468793
+copy probs max: 0.240398034
+copy probs min: 0
+correspond_copy_vocab_probs: [0.528561831 0.471438169]
+correspond vocab gen prob (copy max): 4.7466834e-08
+correspond vocab gen prob (copy min): 0.163468793
+Epoch1-train_step47-loss=14.348216
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.245410547
+correspond_copy_vocab_probs: [0.513017714 0.486982286]
+correspond vocab gen prob (copy max): 0.00412950525
+correspond vocab gen prob (copy min): 0.172587603
+copy probs min: 0
+copy probs max: 0.245410547
+correspond_copy_vocab_probs: [0.513017714 0.486982286]
+correspond vocab gen prob (copy max): 0.00412950525
+correspond vocab gen prob (copy min): 0.172587603
+Epoch1-train_step48-loss=12.543125
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.181003734
+copy probs min: 0
+correspond_copy_vocab_probs: [0.57927376 0.420726269]
+correspond vocab gen prob (copy max): 0.00438098703
+correspond vocab gen prob (copy min): 0.0209244173
+copy probs max: 0.181003734
+copy probs min: 0
+correspond_copy_vocab_probs: [0.57927376 0.420726269]
+correspond vocab gen prob (copy max): 0.00438098703
+correspond vocab gen prob (copy min): 0.0209244173
+Epoch1-train_step49-loss=15.141127
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.247440174
+copy probs min: 0
+correspond_copy_vocab_probs: [0.719890237 0.280109763]
+correspond vocab gen prob (copy max): 1.67595263e-05
+correspond vocab gen prob (copy min): 0.200809911
+copy probs max: 0.247440174
+copy probs min: 0
+correspond_copy_vocab_probs: [0.719890237 0.280109763]
+correspond vocab gen prob (copy max): 1.67595263e-05
+correspond vocab gen prob (copy min): 0.200809911
+Epoch1-train_step50-loss=12.707053
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.162489593
+correspond_copy_vocab_probs: [0.709995806 0.290004224]
+correspond vocab gen prob (copy min): 0.035101071
+correspond vocab gen prob (copy max): 2.63422521e-07
+copy probs max: 0.162489593
+copy probs min: 0
+correspond_copy_vocab_probs: [0.709995806 0.290004224]
+correspond vocab gen prob (copy max): 2.63422521e-07
+correspond vocab gen prob (copy min): 0.035101071
+Epoch1-train_step51-loss=13.753110
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.177629754
+copy probs min: 0
+correspond_copy_vocab_probs: [0.666065931 0.333934069]
+correspond vocab gen prob (copy max): 0.00457347417
+correspond vocab gen prob (copy min): 0.239923209
+copy probs min: 0
+copy probs max: 0.177629754
+correspond vocab gen prob (copy min): 0.239923209
+correspond vocab gen prob (copy max): 0.00457347417
+correspond_copy_vocab_probs: [0.666065931 0.333934069]
+Epoch1-train_step52-loss=14.788177
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.200159445
+copy probs min: 0
+correspond_copy_vocab_probs: [0.578217804 0.421782166]
+correspond vocab gen prob (copy max): 2.86042649e-07
+correspond vocab gen prob (copy min): 0.0269503836
+copy probs max: 0.200159445
+copy probs min: 0
+correspond_copy_vocab_probs: [0.578217804 0.421782166]
+correspond vocab gen prob (copy max): 2.86042649e-07
+correspond vocab gen prob (copy min): 0.0269503836
+Epoch1-train_step53-loss=14.476196
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.349519342
+copy probs min: 0
+correspond_copy_vocab_probs: [0.581176 0.418824]
+correspond vocab gen prob (copy max): 0.00392598845
+correspond vocab gen prob (copy min): 0.283101827
+copy probs max: 0.349519342
+copy probs min: 0
+correspond_copy_vocab_probs: [0.581176 0.418824]
+correspond vocab gen prob (copy max): 0.00392598845
+correspond vocab gen prob (copy min): 0.283101827
+Epoch1-train_step54-loss=12.899714
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.262649029
+correspond_copy_vocab_probs: [0.52620852 0.47379145]
+correspond vocab gen prob (copy min): 0.308323771
+correspond vocab gen prob (copy max): 4.55330394e-07
+copy probs max: 0.262649029
+copy probs min: 0
+correspond_copy_vocab_probs: [0.52620852 0.47379145]
+correspond vocab gen prob (copy max): 4.55330394e-07
+correspond vocab gen prob (copy min): 0.308323771
+Epoch1-train_step55-loss=13.238331
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.212133855
+copy probs min: 0
+correspond_copy_vocab_probs: [0.568843424 0.431156576]
+correspond vocab gen prob (copy min): 0.0670139715
+correspond vocab gen prob (copy max): 0.00357112894
+copy probs min: 0
+copy probs max: 0.212133855
+correspond_copy_vocab_probs: [0.568843424 0.431156576]
+correspond vocab gen prob (copy max): 0.00357112894
+correspond vocab gen prob (copy min): 0.0670139715
+Epoch1-train_step56-loss=13.696117
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.194861859
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.00359092653
+correspond_copy_vocab_probs: [0.609859109 0.390140861]
+correspond vocab gen prob (copy min): 0.0242327433
+copy probs max: 0.194861859
+copy probs min: 0
+correspond_copy_vocab_probs: [0.609859109 0.390140861]
+correspond vocab gen prob (copy max): 0.00359092653
+correspond vocab gen prob (copy min): 0.0242327433
+Epoch1-train_step57-loss=11.986998
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.282788426
+copy probs min: 0
+correspond vocab gen prob (copy max): 5.60246917e-07
+correspond_copy_vocab_probs: [0.657404 0.342596024]
+correspond vocab gen prob (copy min): 0.0734243616
+copy probs max: 0.282788426
+copy probs min: 0
+correspond_copy_vocab_probs: [0.657404 0.342596024]
+correspond vocab gen prob (copy max): 5.60246917e-07
+correspond vocab gen prob (copy min): 0.0734243616
+Epoch1-train_step58-loss=15.064267
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.265680522
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.00394628
+correspond_copy_vocab_probs: [0.67147851 0.32852152]
+correspond vocab gen prob (copy min): 0.0401893146
+copy probs max: 0.265680522
+copy probs min: 0
+correspond_copy_vocab_probs: [0.67147851 0.32852152]
+correspond vocab gen prob (copy max): 0.00394628
+correspond vocab gen prob (copy min): 0.0401893146
+Epoch1-train_step59-loss=12.515259
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.261354029
+correspond_copy_vocab_probs: [0.445894718 0.554105282]
+correspond vocab gen prob (copy max): 0.00279141963
+correspond vocab gen prob (copy min): 0.0939282924
+copy probs max: 0.261354029
+copy probs min: 0
+correspond_copy_vocab_probs: [0.445894718 0.554105282]
+correspond vocab gen prob (copy max): 0.00279141963
+correspond vocab gen prob (copy min): 0.0939282924
+Epoch1-train_step60-loss=12.697433
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.250873923
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.00292906677
+correspond vocab gen prob (copy min): 0.427921176
+correspond_copy_vocab_probs: [0.472650498 0.527349472]
+copy probs max: 0.250873923
+copy probs min: 0
+correspond_copy_vocab_probs: [0.472650498 0.527349472]
+correspond vocab gen prob (copy max): 0.00292906677
+correspond vocab gen prob (copy min): 0.427921176
+Epoch1-train_step61-loss=13.740185
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.267236322
+correspond vocab gen prob (copy max): 9.82469e-07
+correspond_copy_vocab_probs: [0.461493164 0.538506806]
+correspond vocab gen prob (copy min): 0.0420606248
+copy probs min: 0
+copy probs max: 0.267236322
+correspond_copy_vocab_probs: [0.461493164 0.538506806]
+correspond vocab gen prob (copy max): 9.82469e-07
+correspond vocab gen prob (copy min): 0.0420606248
+Epoch1-train_step62-loss=12.096982
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.233768716
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0417683795
+correspond vocab gen prob (copy max): 1.27144745e-06
+correspond_copy_vocab_probs: [0.524477 0.475523025]
+copy probs min: 0
+copy probs max: 0.233768716
+correspond_copy_vocab_probs: [0.524477 0.475523025]
+correspond vocab gen prob (copy max): 1.27144745e-06
+correspond vocab gen prob (copy min): 0.0417683795
+Epoch1-train_step63-loss=14.314379
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.262808591
+copy probs min: 0
+correspond_copy_vocab_probs: [0.489689022 0.510310948]
+correspond vocab gen prob (copy max): 6.2126287e-07
+correspond vocab gen prob (copy min): 0.447748929
+copy probs max: 0.262808591
+copy probs min: 0
+correspond_copy_vocab_probs: [0.489689022 0.510310948]
+correspond vocab gen prob (copy max): 6.2126287e-07
+correspond vocab gen prob (copy min): 0.447748929
+Epoch1-train_step64-loss=15.528603
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.237487227
+copy probs min: 0
+correspond_copy_vocab_probs: [0.393752843 0.606247187]
+correspond vocab gen prob (copy max): 4.12446809e-07
+correspond vocab gen prob (copy min): 0.457404464
+copy probs min: 0
+copy probs max: 0.237487227
+correspond_copy_vocab_probs: [0.393752843 0.606247187]
+correspond vocab gen prob (copy max): 4.12446809e-07
+correspond vocab gen prob (copy min): 0.457404464
+Epoch1-train_step65-loss=12.744433
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.305966437
+correspond_copy_vocab_probs: [0.423428863 0.576571107]
+correspond vocab gen prob (copy max): 1.01931471e-06
+correspond vocab gen prob (copy min): 0.461563259
+copy probs max: 0.305966437
+copy probs min: 0
+correspond_copy_vocab_probs: [0.423428863 0.576571107]
+correspond vocab gen prob (copy max): 1.01931471e-06
+correspond vocab gen prob (copy min): 0.461563259
+Epoch1-train_step66-loss=12.942352
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.391796947
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.465852886
+correspond vocab gen prob (copy max): 7.18618082e-07
+correspond_copy_vocab_probs: [0.28372097 0.71627903]
+copy probs min: 0
+copy probs max: 0.391796947
+correspond_copy_vocab_probs: [0.28372097 0.71627903]
+correspond vocab gen prob (copy max): 7.18618082e-07
+correspond vocab gen prob (copy min): 0.465852886
+Epoch1-train_step67-loss=14.333735
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.325146496
+copy probs min: 0
+correspond_copy_vocab_probs: [0.344582617 0.655417323]
+correspond vocab gen prob (copy max): 0.00304602529
+correspond vocab gen prob (copy min): 0.47102502
+copy probs max: 0.325146496
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.00304602529
+correspond vocab gen prob (copy min): 0.47102502
+correspond_copy_vocab_probs: [0.344582617 0.655417323]
+Epoch1-train_step68-loss=13.032847
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.227486417
+copy probs min: 0
+correspond vocab gen prob (copy max): 1.46759533e-06
+correspond_copy_vocab_probs: [0.411701471 0.5882985]
+correspond vocab gen prob (copy min): 0.077312775
+copy probs max: 0.227486417
+copy probs min: 0
+correspond_copy_vocab_probs: [0.411701471 0.5882985]
+correspond vocab gen prob (copy max): 1.46759533e-06
+correspond vocab gen prob (copy min): 0.077312775
+Epoch1-train_step69-loss=12.280350
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.282655835
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.466221571
+correspond_copy_vocab_probs: [0.378238589 0.621761382]
+correspond vocab gen prob (copy max): 0.00331807672
+copy probs max: 0.282655835
+copy probs min: 0
+correspond_copy_vocab_probs: [0.378238589 0.621761382]
+correspond vocab gen prob (copy max): 0.00331807672
+correspond vocab gen prob (copy min): 0.466221571
+Epoch1-train_step70-loss=14.393940
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.3507061
+copy probs min: 0
+correspond_copy_vocab_probs: [0.310298651 0.689701378]
+correspond vocab gen prob (copy max): 9.63302341e-07
+correspond vocab gen prob (copy min): 0.0825373232
+copy probs min: 0
+copy probs max: 0.3507061
+correspond vocab gen prob (copy min): 0.0825373232
+correspond vocab gen prob (copy max): 9.63302341e-07
+correspond_copy_vocab_probs: [0.310298651 0.689701378]
+Epoch1-train_step71-loss=11.771703
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.409567982
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0819930732
+correspond vocab gen prob (copy max): 6.76805939e-07
+correspond_copy_vocab_probs: [0.218560547 0.781439483]
+copy probs max: 0.409567982
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0819930732
+correspond vocab gen prob (copy max): 6.76805939e-07
+correspond_copy_vocab_probs: [0.218560547 0.781439483]
+Epoch1-train_step72-loss=13.873510
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.344699413
+correspond_copy_vocab_probs: [0.260158211 0.739841759]
+correspond vocab gen prob (copy max): 0.000565181195
+correspond vocab gen prob (copy min): 0.46831736
+copy probs max: 0.344699413
+copy probs min: 0
+correspond_copy_vocab_probs: [0.260158211 0.739841759]
+correspond vocab gen prob (copy max): 0.000565181195
+correspond vocab gen prob (copy min): 0.46831736
+Epoch1-train_step73-loss=13.584114
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.32097733
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.467013121
+correspond vocab gen prob (copy max): 0.000936276687
+correspond_copy_vocab_probs: [0.374982387 0.625017643]
+copy probs max: 0.32097733
+copy probs min: 0
+correspond_copy_vocab_probs: [0.374982387 0.625017643]
+correspond vocab gen prob (copy max): 0.000936276687
+correspond vocab gen prob (copy min): 0.467013121
+Epoch1-train_step74-loss=11.267783
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.366495639
+copy probs min: 0
+correspond_copy_vocab_probs: [0.349236816 0.650763154]
+correspond vocab gen prob (copy max): 0.00291854911
+correspond vocab gen prob (copy min): 0.470264256
+copy probs max: 0.366495639
+copy probs min: 0
+correspond_copy_vocab_probs: [0.349236816 0.650763154]
+correspond vocab gen prob (copy max): 0.00291854911
+correspond vocab gen prob (copy min): 0.470264256
+Epoch1-train_step75-loss=12.435645
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.420338899
+correspond vocab gen prob (copy min): 0.0938127562
+correspond vocab gen prob (copy max): 0.00192228158
+correspond_copy_vocab_probs: [0.234306663 0.765693307]
+copy probs min: 0
+copy probs max: 0.420338899
+correspond_copy_vocab_probs: [0.234306663 0.765693307]
+correspond vocab gen prob (copy max): 0.00192228158
+correspond vocab gen prob (copy min): 0.0938127562
+Epoch1-train_step76-loss=13.822016
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.363748819
+copy probs min: 0
+correspond_copy_vocab_probs: [0.189646482 0.810353518]
+correspond vocab gen prob (copy max): 0.00152650301
+correspond vocab gen prob (copy min): 0.0967939571
+copy probs max: 0.363748819
+copy probs min: 0
+correspond_copy_vocab_probs: [0.189646482 0.810353518]
+correspond vocab gen prob (copy max): 0.00152650301
+correspond vocab gen prob (copy min): 0.0967939571
+Epoch1-train_step77-loss=14.711743
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.399952263
+copy probs min: 0
+correspond_copy_vocab_probs: [0.228999048 0.771001]
+correspond vocab gen prob (copy max): 8.08216782e-07
+correspond vocab gen prob (copy min): 0.481690139
+copy probs min: 0
+copy probs max: 0.399952263
+correspond_copy_vocab_probs: [0.228999048 0.771001]
+correspond vocab gen prob (copy max): 8.08216782e-07
+correspond vocab gen prob (copy min): 0.481690139
+Epoch1-train_step78-loss=13.108120
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.376704127
+correspond_copy_vocab_probs: [0.222837895 0.777162135]
+correspond vocab gen prob (copy max): 0.00169215619
+correspond vocab gen prob (copy min): 0.493059695
+copy probs max: 0.376704127
+copy probs min: 0
+correspond_copy_vocab_probs: [0.222837895 0.777162135]
+correspond vocab gen prob (copy max): 0.00169215619
+correspond vocab gen prob (copy min): 0.493059695
+Epoch1-train_step79-loss=13.748839
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.318571389
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0822731182
+correspond vocab gen prob (copy max): 0.0021077008
+correspond_copy_vocab_probs: [0.290459394 0.709540546]
+copy probs min: 0
+copy probs max: 0.318571389
+correspond_copy_vocab_probs: [0.290459394 0.709540546]
+correspond vocab gen prob (copy max): 0.0021077008
+correspond vocab gen prob (copy min): 0.0822731182
+Epoch1-train_step80-loss=12.209485
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.350356221
+copy probs min: 0
+correspond vocab gen prob (copy max): 8.50594688e-07
+correspond_copy_vocab_probs: [0.243218437 0.756781578]
+correspond vocab gen prob (copy min): 0.000196758599
+copy probs max: 0.350356221
+copy probs min: 0
+correspond_copy_vocab_probs: [0.243218437 0.756781578]
+correspond vocab gen prob (copy max): 8.50594688e-07
+correspond vocab gen prob (copy min): 0.000196758599
+Epoch1-train_step81-loss=14.805733
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.435121477
+correspond_copy_vocab_probs: [0.198684871 0.801315188]
+correspond vocab gen prob (copy max): 0.0013786084
+correspond vocab gen prob (copy min): 0.0661696792
+copy probs max: 0.435121477
+copy probs min: 0
+correspond_copy_vocab_probs: [0.198684871 0.801315188]
+correspond vocab gen prob (copy max): 0.0013786084
+correspond vocab gen prob (copy min): 0.0661696792
+Epoch1-train_step82-loss=13.149625
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.405386031
+correspond_copy_vocab_probs: [0.131455883 0.868544161]
+correspond vocab gen prob (copy max): 5.04021727e-07
+correspond vocab gen prob (copy min): 0.516122639
+copy probs min: 0
+copy probs max: 0.405386031
+correspond_copy_vocab_probs: [0.131455883 0.868544161]
+correspond vocab gen prob (copy max): 5.04021727e-07
+correspond vocab gen prob (copy min): 0.516122639
+Epoch1-train_step83-loss=13.531731
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.427390754
+copy probs min: 0
+correspond_copy_vocab_probs: [0.172710687 0.827289343]
+correspond vocab gen prob (copy max): 0.00124048302
+correspond vocab gen prob (copy min): 0.0571826361
+copy probs min: 0
+copy probs max: 0.427390754
+correspond_copy_vocab_probs: [0.172710687 0.827289343]
+correspond vocab gen prob (copy max): 0.00124048302
+correspond vocab gen prob (copy min): 0.0571826361
+Epoch1-train_step84-loss=12.695139
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.58560437
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.000843973947
+correspond_copy_vocab_probs: [0.271477342 0.728522658]
+correspond vocab gen prob (copy min): 0.0442447923
+copy probs max: 0.58560437
+copy probs min: 0
+correspond_copy_vocab_probs: [0.271477342 0.728522658]
+correspond vocab gen prob (copy max): 0.000843973947
+correspond vocab gen prob (copy min): 0.0442447923
+Epoch1-train_step85-loss=13.317720
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.71524936
+copy probs min: 0
+correspond_copy_vocab_probs: [0.187978819 0.812021196]
+correspond vocab gen prob (copy max): 5.20486822e-07
+correspond vocab gen prob (copy min): 0.509308875
+copy probs max: 0.71524936
+copy probs min: 0
+correspond_copy_vocab_probs: [0.187978819 0.812021196]
+correspond vocab gen prob (copy max): 5.20486822e-07
+correspond vocab gen prob (copy min): 0.509308875
+Epoch1-train_step86-loss=12.001667
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.53393352
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.510960281
+correspond vocab gen prob (copy max): 1.40059376e-06
+correspond_copy_vocab_probs: [0.275129676 0.724870324]
+copy probs min: 0
+copy probs max: 0.53393352
+correspond vocab gen prob (copy min): 0.510960281
+correspond vocab gen prob (copy max): 1.40059376e-06
+correspond_copy_vocab_probs: [0.275129676 0.724870324]
+Epoch1-train_step87-loss=12.002685
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.504304
+correspond_copy_vocab_probs: [0.116532363 0.883467615]
+correspond vocab gen prob (copy max): 4.58848973e-07
+correspond vocab gen prob (copy min): 0.046481438
+copy probs max: 0.504304
+copy probs min: 0
+correspond_copy_vocab_probs: [0.116532363 0.883467615]
+correspond vocab gen prob (copy max): 4.58848973e-07
+correspond vocab gen prob (copy min): 0.046481438
+Epoch1-train_step88-loss=12.961086
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.481444776
+correspond vocab gen prob (copy min): 0.0632779598
+correspond vocab gen prob (copy max): 0.00156849599
+correspond_copy_vocab_probs: [0.197001 0.802999]
+copy probs max: 0.481444776
+copy probs min: 0
+correspond_copy_vocab_probs: [0.197001 0.802999]
+correspond vocab gen prob (copy max): 0.00156849599
+correspond vocab gen prob (copy min): 0.0632779598
+Epoch1-train_step89-loss=12.087061
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.452687353
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0825130939 0.917486966]
+correspond vocab gen prob (copy max): 2.28696564e-07
+correspond vocab gen prob (copy min): 0.00101477257
+copy probs min: 0
+copy probs max: 0.452687353
+correspond_copy_vocab_probs: [0.0825130939 0.917486966]
+correspond vocab gen prob (copy min): 0.00101477257
+correspond vocab gen prob (copy max): 2.28696564e-07
+Epoch1-train_step90-loss=13.403980
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.424524188
+copy probs min: 0
+correspond_copy_vocab_probs: [0.251595676 0.748404324]
+correspond vocab gen prob (copy max): 0.0021269694
+correspond vocab gen prob (copy min): 0.0555126891
+copy probs max: 0.424524188
+copy probs min: 0
+correspond_copy_vocab_probs: [0.251595676 0.748404324]
+correspond vocab gen prob (copy max): 0.0021269694
+correspond vocab gen prob (copy min): 0.0555126891
+Epoch1-train_step91-loss=11.076072
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.428847
+correspond_copy_vocab_probs: [0.506742656 0.493257374]
+correspond vocab gen prob (copy max): 1.95842063e-06
+correspond vocab gen prob (copy min): 0.502218068
+copy probs min: 0
+copy probs max: 0.428847
+correspond_copy_vocab_probs: [0.506742656 0.493257374]
+correspond vocab gen prob (copy max): 1.95842063e-06
+correspond vocab gen prob (copy min): 0.502218068
+Epoch1-train_step92-loss=13.872120
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.404753417
+copy probs min: 0
+correspond_copy_vocab_probs: [0.182220668 0.817779362]
+correspond vocab gen prob (copy max): 4.75195719e-07
+correspond vocab gen prob (copy min): 0.502346158
+copy probs min: 0
+copy probs max: 0.404753417
+correspond_copy_vocab_probs: [0.182220668 0.817779362]
+correspond vocab gen prob (copy max): 4.75195719e-07
+correspond vocab gen prob (copy min): 0.502346158
+Epoch1-train_step93-loss=11.927574
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.40482074
+correspond vocab gen prob (copy max): 9.22558968e-07
+correspond_copy_vocab_probs: [0.268302679 0.731697381]
+correspond vocab gen prob (copy min): 0.492800087
+copy probs min: 0
+copy probs max: 0.40482074
+correspond_copy_vocab_probs: [0.268302679 0.731697381]
+correspond vocab gen prob (copy max): 9.22558968e-07
+correspond vocab gen prob (copy min): 0.492800087
+Epoch1-train_step94-loss=11.825109
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.396697164
+copy probs min: 0
+correspond_copy_vocab_probs: [0.287676483 0.712323487]
+correspond vocab gen prob (copy max): 0.00223615905
+correspond vocab gen prob (copy min): 0.0716650262
+copy probs max: 0.396697164
+copy probs min: 0
+correspond_copy_vocab_probs: [0.287676483 0.712323487]
+correspond vocab gen prob (copy max): 0.00223615905
+correspond vocab gen prob (copy min): 0.0716650262
+Epoch1-train_step95-loss=12.008573
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.369967788
+correspond vocab gen prob (copy min): 0.000231151804
+correspond vocab gen prob (copy max): 0.00175959233
+correspond_copy_vocab_probs: [0.210549653 0.789450347]
+copy probs min: 0
+copy probs max: 0.369967788
+correspond vocab gen prob (copy min): 0.000231151804
+correspond vocab gen prob (copy max): 0.00175959233
+correspond_copy_vocab_probs: [0.210549653 0.789450347]
+Epoch1-train_step96-loss=12.156060
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.428704679
+copy probs min: 0
+correspond_copy_vocab_probs: [0.139012501 0.860987484]
+correspond vocab gen prob (copy max): 0.0012067561
+correspond vocab gen prob (copy min): 0.0593508743
+copy probs min: 0
+copy probs max: 0.428704679
+correspond_copy_vocab_probs: [0.139012501 0.860987484]
+correspond vocab gen prob (copy max): 0.0012067561
+correspond vocab gen prob (copy min): 0.0593508743
+Epoch1-train_step97-loss=12.365293
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.444479913
+copy probs min: 0
+correspond_copy_vocab_probs: [0.105024204 0.894975781]
+correspond vocab gen prob (copy max): 5.79325274e-07
+correspond vocab gen prob (copy min): 0.0693274066
+copy probs max: 0.444479913
+copy probs min: 0
+correspond_copy_vocab_probs: [0.105024204 0.894975781]
+correspond vocab gen prob (copy max): 5.79325274e-07
+correspond vocab gen prob (copy min): 0.0693274066
+Epoch1-train_step98-loss=12.643339
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.445126116
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0528676361 0.947132349]
+correspond vocab gen prob (copy max): 2.41566141e-07
+correspond vocab gen prob (copy min): 0.0857590884
+copy probs max: 0.445126116
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0528676361 0.947132349]
+correspond vocab gen prob (copy max): 2.41566141e-07
+correspond vocab gen prob (copy min): 0.0857590884
+Epoch1-train_step99-loss=12.732456
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.394590825
+correspond_copy_vocab_probs: [0.196390569 0.803609431]
+correspond vocab gen prob (copy max): 0.00179582753
+correspond vocab gen prob (copy min): 0.479226559
+copy probs max: 0.394590825
+copy probs min: 0
+correspond_copy_vocab_probs: [0.196390569 0.803609431]
+correspond vocab gen prob (copy max): 0.00179582753
+correspond vocab gen prob (copy min): 0.479226559
+Epoch1-train_step100-loss=11.915489
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.337152123
+copy probs min: 0
+correspond_copy_vocab_probs: [0.236792892 0.763207138]
+correspond vocab gen prob (copy max): 8.05278148e-07
+correspond vocab gen prob (copy min): 0.487751216
+copy probs min: 0
+copy probs max: 0.337152123
+correspond_copy_vocab_probs: [0.236792892 0.763207138]
+correspond vocab gen prob (copy max): 8.05278148e-07
+correspond vocab gen prob (copy min): 0.487751216
+Epoch1-train_step101-loss=12.449200
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.45605123
+copy probs min: 0
+correspond_copy_vocab_probs: [0.148221239 0.851778805]
+correspond vocab gen prob (copy max): 6.55482097e-07
+correspond vocab gen prob (copy min): 0.485447168
+copy probs max: 0.45605123
+copy probs min: 0
+correspond_copy_vocab_probs: [0.148221239 0.851778805]
+correspond vocab gen prob (copy max): 6.55482097e-07
+correspond vocab gen prob (copy min): 0.485447168
+Epoch1-train_step102-loss=12.579675
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.385978907
+correspond vocab gen prob (copy max): 2.66859424e-05
+correspond_copy_vocab_probs: [0.127946764 0.872053266]
+correspond vocab gen prob (copy min): 0.490270406
+copy probs min: 0
+copy probs max: 0.385978907
+correspond_copy_vocab_probs: [0.127946764 0.872053266]
+correspond vocab gen prob (copy max): 2.66859424e-05
+correspond vocab gen prob (copy min): 0.490270406
+Epoch1-train_step103-loss=10.642831
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.334484786
+correspond_copy_vocab_probs: [0.162798107 0.837201893]
+correspond vocab gen prob (copy max): 5.33135108e-07
+correspond vocab gen prob (copy min): 0.00297723431
+copy probs min: 0
+copy probs max: 0.334484786
+correspond_copy_vocab_probs: [0.162798107 0.837201893]
+correspond vocab gen prob (copy min): 0.00297723431
+correspond vocab gen prob (copy max): 5.33135108e-07
+Epoch1-train_step104-loss=12.020900
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.545850515
+correspond_copy_vocab_probs: [0.346075118 0.653924823]
+correspond vocab gen prob (copy max): 1.52631719e-06
+correspond vocab gen prob (copy min): 0.495022207
+copy probs max: 0.545850515
+copy probs min: 0
+correspond_copy_vocab_probs: [0.346075118 0.653924823]
+correspond vocab gen prob (copy max): 1.52631719e-06
+correspond vocab gen prob (copy min): 0.495022207
+Epoch1-train_step105-loss=12.431369
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.436127335
+correspond_copy_vocab_probs: [0.180108353 0.819891632]
+correspond vocab gen prob (copy max): 7.16245836e-07
+correspond vocab gen prob (copy min): 1.81766768e-06
+copy probs max: 0.436127335
+copy probs min: 0
+correspond vocab gen prob (copy min): 1.81766768e-06
+correspond vocab gen prob (copy max): 7.16245836e-07
+correspond_copy_vocab_probs: [0.180108353 0.819891632]
+Epoch1-train_step106-loss=11.908134
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.433625758
+copy probs min: 0
+correspond_copy_vocab_probs: [0.199694976 0.800305068]
+correspond vocab gen prob (copy max): 4.66791619e-07
+correspond vocab gen prob (copy min): 0.500428259
+copy probs min: 0
+copy probs max: 0.433625758
+correspond_copy_vocab_probs: [0.199694976 0.800305068]
+correspond vocab gen prob (copy max): 4.66791619e-07
+correspond vocab gen prob (copy min): 0.500428259
+Epoch1-train_step107-loss=12.702896
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.620183
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.00326877483
+correspond_copy_vocab_probs: [0.299675763 0.700324237]
+correspond vocab gen prob (copy min): 0.100176394
+copy probs min: 0
+copy probs max: 0.620183
+correspond_copy_vocab_probs: [0.299675763 0.700324237]
+correspond vocab gen prob (copy max): 0.00326877483
+correspond vocab gen prob (copy min): 0.100176394
+Epoch1-train_step108-loss=11.585684
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.359832615
+correspond_copy_vocab_probs: [0.313886881 0.686113119]
+correspond vocab gen prob (copy max): 1.17052025e-06
+correspond vocab gen prob (copy min): 0.491277
+copy probs min: 0
+copy probs max: 0.359832615
+correspond_copy_vocab_probs: [0.313886881 0.686113119]
+correspond vocab gen prob (copy max): 1.17052025e-06
+correspond vocab gen prob (copy min): 0.491277
+Epoch1-train_step109-loss=14.022436
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.632033527
+copy probs min: 0
+correspond_copy_vocab_probs: [0.268832147 0.731167912]
+correspond vocab gen prob (copy max): 9.94318816e-06
+correspond vocab gen prob (copy min): 0.123334497
+copy probs min: 0
+copy probs max: 0.632033527
+correspond_copy_vocab_probs: [0.268832147 0.731167912]
+correspond vocab gen prob (copy max): 9.94318816e-06
+correspond vocab gen prob (copy min): 0.123334497
+Epoch1-train_step110-loss=13.033504
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.386105418
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0821874216 0.917812586]
+correspond vocab gen prob (copy min): 0.498051941
+correspond vocab gen prob (copy max): 2.81734799e-07
+copy probs min: 0
+copy probs max: 0.386105418
+correspond_copy_vocab_probs: [0.0821874216 0.917812586]
+correspond vocab gen prob (copy max): 2.81734799e-07
+correspond vocab gen prob (copy min): 0.498051941
+Epoch1-train_step111-loss=12.234980
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.450313896
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.495673805
+correspond vocab gen prob (copy max): 6.00262581e-07
+correspond_copy_vocab_probs: [0.1665885 0.833411515]
+copy probs max: 0.450313896
+copy probs min: 0
+correspond_copy_vocab_probs: [0.1665885 0.833411515]
+correspond vocab gen prob (copy max): 6.00262581e-07
+correspond vocab gen prob (copy min): 0.495673805
+Epoch1-train_step112-loss=12.679877
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.416936874
+correspond vocab gen prob (copy min): 0.00680967839
+correspond vocab gen prob (copy max): 2.86091126e-05
+correspond_copy_vocab_probs: [0.15100494 0.84899509]
+copy probs max: 0.416936874
+copy probs min: 0
+correspond_copy_vocab_probs: [0.15100494 0.84899509]
+correspond vocab gen prob (copy max): 2.86091126e-05
+correspond vocab gen prob (copy min): 0.00680967839
+Epoch1-train_step113-loss=13.228207
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.468547612
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0584300421
+correspond vocab gen prob (copy max): 3.44229335e-07
+correspond_copy_vocab_probs: [0.070715867 0.929284155]
+copy probs max: 0.468547612
+copy probs min: 0
+correspond_copy_vocab_probs: [0.070715867 0.929284155]
+correspond vocab gen prob (copy max): 3.44229335e-07
+correspond vocab gen prob (copy min): 0.0584300421
+Epoch1-train_step114-loss=13.707881
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.474173278
+correspond_copy_vocab_probs: [0.101774149 0.898225904]
+correspond vocab gen prob (copy max): 4.27211e-07
+correspond vocab gen prob (copy min): 0.0927760229
+copy probs min: 0
+copy probs max: 0.474173278
+correspond_copy_vocab_probs: [0.101774149 0.898225904]
+correspond vocab gen prob (copy max): 4.27211e-07
+correspond vocab gen prob (copy min): 0.0927760229
+Epoch1-train_step115-loss=10.932326
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.406252146
+copy probs min: 0
+correspond_copy_vocab_probs: [0.240332425 0.759667575]
+correspond vocab gen prob (copy max): 6.16606201e-07
+correspond vocab gen prob (copy min): 0.479964882
+copy probs min: 0
+copy probs max: 0.406252146
+correspond_copy_vocab_probs: [0.240332425 0.759667575]
+correspond vocab gen prob (copy max): 6.16606201e-07
+correspond vocab gen prob (copy min): 0.479964882
+Epoch1-train_step116-loss=11.369905
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.450957805
+copy probs min: 0
+correspond_copy_vocab_probs: [0.117649995 0.882349968]
+correspond vocab gen prob (copy min): 0.000481934898
+correspond vocab gen prob (copy max): 5.93382083e-07
+copy probs max: 0.450957805
+copy probs min: 0
+correspond_copy_vocab_probs: [0.117649995 0.882349968]
+correspond vocab gen prob (copy max): 5.93382083e-07
+correspond vocab gen prob (copy min): 0.000481934898
+Epoch1-train_step117-loss=12.760876
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.412754506
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0750822127 0.924917817]
+correspond vocab gen prob (copy max): 3.12212364e-07
+correspond vocab gen prob (copy min): 0.473377794
+copy probs min: 0
+copy probs max: 0.412754506
+correspond_copy_vocab_probs: [0.0750822127 0.924917817]
+correspond vocab gen prob (copy max): 3.12212364e-07
+correspond vocab gen prob (copy min): 0.473377794
+Epoch1-train_step118-loss=10.015524
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.435463458
+correspond_copy_vocab_probs: [0.21996963 0.78003037]
+correspond vocab gen prob (copy max): 0.00183931657
+correspond vocab gen prob (copy min): 0.0279354025
+copy probs min: 0
+copy probs max: 0.435463458
+correspond vocab gen prob (copy min): 0.0279354025
+correspond vocab gen prob (copy max): 0.00183931657
+correspond_copy_vocab_probs: [0.21996963 0.78003037]
+Epoch1-train_step119-loss=13.665741
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.576057196
+copy probs min: 0
+correspond_copy_vocab_probs: [0.325229526 0.674770534]
+correspond vocab gen prob (copy max): 0.00272883661
+correspond vocab gen prob (copy min): 0.469623029
+copy probs max: 0.576057196
+copy probs min: 0
+correspond_copy_vocab_probs: [0.325229526 0.674770534]
+correspond vocab gen prob (copy max): 0.00272883661
+correspond vocab gen prob (copy min): 0.469623029
+Epoch1-train_step120-loss=10.954145
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.48555091
+copy probs min: 0
+correspond vocab gen prob (copy max): 5.33886066e-07
+correspond vocab gen prob (copy min): 0.473494887
+correspond_copy_vocab_probs: [0.172321916 0.827678]
+copy probs min: 0
+copy probs max: 0.48555091
+correspond_copy_vocab_probs: [0.172321916 0.827678]
+correspond vocab gen prob (copy max): 5.33886066e-07
+correspond vocab gen prob (copy min): 0.473494887
+Epoch1-train_step121-loss=11.483537
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.457786947
+correspond_copy_vocab_probs: [0.207339391 0.792660594]
+correspond vocab gen prob (copy max): 7.00754356e-07
+correspond vocab gen prob (copy min): 0.0938572884
+copy probs max: 0.457786947
+copy probs min: 0
+correspond_copy_vocab_probs: [0.207339391 0.792660594]
+correspond vocab gen prob (copy max): 7.00754356e-07
+correspond vocab gen prob (copy min): 0.0938572884
+Epoch1-train_step122-loss=12.598285
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.595616162
+copy probs min: 0
+correspond vocab gen prob (copy max): 1.19088645e-06
+correspond vocab gen prob (copy min): 0.479178369
+correspond_copy_vocab_probs: [0.28884533 0.71115464]
+copy probs max: 0.595616162
+copy probs min: 0
+correspond_copy_vocab_probs: [0.28884533 0.71115464]
+correspond vocab gen prob (copy max): 1.19088645e-06
+correspond vocab gen prob (copy min): 0.479178369
+Epoch1-train_step123-loss=12.685131
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.41171965
+correspond vocab gen prob (copy min): 0.479634821
+correspond vocab gen prob (copy max): 1.13760223e-06
+correspond_copy_vocab_probs: [0.185258657 0.814741373]
+copy probs min: 0
+copy probs max: 0.41171965
+correspond_copy_vocab_probs: [0.185258657 0.814741373]
+correspond vocab gen prob (copy max): 1.13760223e-06
+correspond vocab gen prob (copy min): 0.479634821
+Epoch1-train_step124-loss=11.141727
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.467048168
+copy probs min: 0
+correspond_copy_vocab_probs: [0.151299849 0.848700106]
+correspond vocab gen prob (copy max): 8.76467482e-07
+correspond vocab gen prob (copy min): 0.0929800346
+copy probs max: 0.467048168
+copy probs min: 0
+correspond_copy_vocab_probs: [0.151299849 0.848700106]
+correspond vocab gen prob (copy max): 8.76467482e-07
+correspond vocab gen prob (copy min): 0.0929800346
+Epoch1-train_step125-loss=11.485571
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.336622655
+copy probs min: 0
+correspond_copy_vocab_probs: [0.092008 0.907992065]
+correspond vocab gen prob (copy max): 0.000748457096
+correspond vocab gen prob (copy min): 0.48314473
+copy probs min: 0
+copy probs max: 0.336622655
+correspond_copy_vocab_probs: [0.092008 0.907992065]
+correspond vocab gen prob (copy max): 0.000748457096
+correspond vocab gen prob (copy min): 0.48314473
+Epoch1-train_step126-loss=12.796825
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.480104953
+correspond vocab gen prob (copy min): 0.115030214
+correspond vocab gen prob (copy max): 1.03418176e-06
+correspond_copy_vocab_probs: [0.129167199 0.870832801]
+copy probs max: 0.480104953
+copy probs min: 0
+correspond_copy_vocab_probs: [0.129167199 0.870832801]
+correspond vocab gen prob (copy max): 1.03418176e-06
+correspond vocab gen prob (copy min): 0.115030214
+Epoch1-train_step127-loss=11.922397
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.40249294
+copy probs min: 0
+correspond_copy_vocab_probs: [0.087258555 0.912741482]
+correspond vocab gen prob (copy max): 7.99545e-07
+correspond vocab gen prob (copy min): 0.494971395
+copy probs min: 0
+copy probs max: 0.40249294
+correspond_copy_vocab_probs: [0.087258555 0.912741482]
+correspond vocab gen prob (copy max): 7.99545e-07
+correspond vocab gen prob (copy min): 0.494971395
+Epoch1-train_step128-loss=9.983183
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.470148325
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0591099 0.940890074]
+correspond vocab gen prob (copy max): 2.31715958e-07
+correspond vocab gen prob (copy min): 0.499648929
+copy probs max: 0.470148325
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0591099 0.940890074]
+correspond vocab gen prob (copy max): 2.31715958e-07
+correspond vocab gen prob (copy min): 0.499648929
+Epoch1-train_step129-loss=11.223495
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.431506932
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0567996055 0.94320035]
+correspond vocab gen prob (copy max): 3.71816157e-07
+correspond vocab gen prob (copy min): 0.508757949
+copy probs max: 0.431506932
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0567996055 0.94320035]
+correspond vocab gen prob (copy max): 3.71816157e-07
+correspond vocab gen prob (copy min): 0.508757949
+Epoch1-train_step130-loss=10.885257
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.415127516
+correspond_copy_vocab_probs: [0.17281577 0.82718426]
+correspond vocab gen prob (copy max): 1.10289295e-06
+correspond vocab gen prob (copy min): 0.119446456
+copy probs min: 0
+copy probs max: 0.415127516
+correspond vocab gen prob (copy min): 0.119446456
+correspond vocab gen prob (copy max): 1.10289295e-06
+correspond_copy_vocab_probs: [0.17281577 0.82718426]
+Epoch1-train_step131-loss=11.530822
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.375913262
+copy probs min: 0
+correspond vocab gen prob (copy max): 1.18316325e-06
+correspond_copy_vocab_probs: [0.487209499 0.512790561]
+correspond vocab gen prob (copy min): 0.513093054
+copy probs max: 0.375913262
+copy probs min: 0
+correspond_copy_vocab_probs: [0.487209499 0.512790561]
+correspond vocab gen prob (copy max): 1.18316325e-06
+correspond vocab gen prob (copy min): 0.513093054
+Epoch1-train_step132-loss=12.309518
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.385532349
+correspond_copy_vocab_probs: [0.25723812 0.74276191]
+correspond vocab gen prob (copy max): 0.00222146348
+correspond vocab gen prob (copy min): 0.509598
+copy probs min: 0
+copy probs max: 0.385532349
+correspond_copy_vocab_probs: [0.25723812 0.74276191]
+correspond vocab gen prob (copy max): 0.00222146348
+correspond vocab gen prob (copy min): 0.509598
+Epoch1-train_step133-loss=11.021595
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.661926925
+copy probs min: 0
+correspond_copy_vocab_probs: [0.264299244 0.735700786]
+correspond vocab gen prob (copy max): 7.32618844e-07
+correspond vocab gen prob (copy min): 0.499838471
+copy probs max: 0.661926925
+copy probs min: 0
+correspond_copy_vocab_probs: [0.264299244 0.735700786]
+correspond vocab gen prob (copy max): 7.32618844e-07
+correspond vocab gen prob (copy min): 0.499838471
+Epoch1-train_step134-loss=10.462918
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.460844845
+copy probs min: 0
+correspond_copy_vocab_probs: [0.145225823 0.854774237]
+correspond vocab gen prob (copy max): 0.00152605737
+correspond vocab gen prob (copy min): 0.495264381
+copy probs max: 0.460844845
+copy probs min: 0
+correspond_copy_vocab_probs: [0.145225823 0.854774237]
+correspond vocab gen prob (copy max): 0.00152605737
+correspond vocab gen prob (copy min): 0.495264381
+Epoch1-train_step135-loss=14.045247
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.557679772
+correspond vocab gen prob (copy min): 0.483715683
+correspond vocab gen prob (copy max): 0.000431687891
+correspond_copy_vocab_probs: [0.331156671 0.668843389]
+copy probs max: 0.557679772
+copy probs min: 0
+correspond_copy_vocab_probs: [0.331156671 0.668843389]
+correspond vocab gen prob (copy max): 0.000431687891
+correspond vocab gen prob (copy min): 0.483715683
+Epoch1-train_step136-loss=10.515298
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.38718313
+correspond vocab gen prob (copy min): 0.501813531
+correspond vocab gen prob (copy max): 0.00198609731
+correspond_copy_vocab_probs: [0.185778037 0.814222]
+copy probs max: 0.38718313
+copy probs min: 0
+correspond_copy_vocab_probs: [0.185778037 0.814222]
+correspond vocab gen prob (copy max): 0.00198609731
+correspond vocab gen prob (copy min): 0.501813531
+Epoch1-train_step137-loss=9.274389
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.48066
+correspond_copy_vocab_probs: [0.067986235 0.93201369]
+correspond vocab gen prob (copy max): 3.54647796e-07
+correspond vocab gen prob (copy min): 0.508257568
+copy probs min: 0
+copy probs max: 0.48066
+correspond_copy_vocab_probs: [0.067986235 0.93201369]
+correspond vocab gen prob (copy max): 3.54647796e-07
+correspond vocab gen prob (copy min): 0.508257568
+Epoch1-train_step138-loss=12.384383
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.500566542
+copy probs min: 0
+correspond_copy_vocab_probs: [0.159806371 0.84019357]
+correspond vocab gen prob (copy max): 0.0016632512
+correspond vocab gen prob (copy min): 0.00725195
+copy probs max: 0.500566542
+copy probs min: 0
+correspond_copy_vocab_probs: [0.159806371 0.84019357]
+correspond vocab gen prob (copy max): 0.0016632512
+correspond vocab gen prob (copy min): 0.00725195
+Epoch1-train_step139-loss=10.341922
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.578053296
+copy probs min: 0
+correspond_copy_vocab_probs: [0.119275361 0.880724609]
+correspond vocab gen prob (copy min): 0.523860395
+correspond vocab gen prob (copy max): 3.90651763e-07
+copy probs min: 0
+copy probs max: 0.578053296
+correspond_copy_vocab_probs: [0.119275361 0.880724609]
+correspond vocab gen prob (copy max): 3.90651763e-07
+correspond vocab gen prob (copy min): 0.523860395
+Epoch1-train_step140-loss=10.531868
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.388708651
+copy probs min: 0
+correspond_copy_vocab_probs: [0.121507488 0.878492475]
+correspond vocab gen prob (copy max): 0.000100035664
+correspond vocab gen prob (copy min): 0.535342216
+copy probs max: 0.388708651
+copy probs min: 0
+correspond_copy_vocab_probs: [0.121507488 0.878492475]
+correspond vocab gen prob (copy max): 0.000100035664
+correspond vocab gen prob (copy min): 0.535342216
+Epoch1-train_step141-loss=13.280761
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.387836635
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.550273538
+correspond_copy_vocab_probs: [0.0634702891 0.936529696]
+correspond vocab gen prob (copy max): 5.74046794e-07
+copy probs min: 0
+copy probs max: 0.387836635
+correspond_copy_vocab_probs: [0.0634702891 0.936529696]
+correspond vocab gen prob (copy max): 5.74046794e-07
+correspond vocab gen prob (copy min): 0.550273538
+Epoch1-train_step142-loss=10.872869
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.419411838
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.00228587724
+correspond_copy_vocab_probs: [0.233109385 0.766890645]
+correspond vocab gen prob (copy min): 0.0813657343
+copy probs max: 0.419411838
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0813657343
+correspond vocab gen prob (copy max): 0.00228587724
+correspond_copy_vocab_probs: [0.233109385 0.766890645]
+Epoch1-train_step143-loss=10.978456
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.378614724
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0520727113
+correspond vocab gen prob (copy max): 1.29006257e-05
+correspond_copy_vocab_probs: [0.138530299 0.861469746]
+copy probs min: 0
+copy probs max: 0.378614724
+correspond_copy_vocab_probs: [0.138530299 0.861469746]
+correspond vocab gen prob (copy max): 1.29006257e-05
+correspond vocab gen prob (copy min): 0.0520727113
+Epoch1-train_step144-loss=12.830134
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.440482736
+correspond vocab gen prob (copy max): 5.81042684e-07
+correspond_copy_vocab_probs: [0.0681976601 0.931802273]
+correspond vocab gen prob (copy min): 0.0884295329
+copy probs min: 0
+copy probs max: 0.440482736
+correspond_copy_vocab_probs: [0.0681976601 0.931802273]
+correspond vocab gen prob (copy max): 5.81042684e-07
+correspond vocab gen prob (copy min): 0.0884295329
+Epoch1-train_step145-loss=10.778996
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.484995246
+copy probs min: 0
+correspond_copy_vocab_probs: [0.163311988 0.836688]
+correspond vocab gen prob (copy min): 0.564188361
+correspond vocab gen prob (copy max): 5.75900515e-07
+copy probs max: 0.484995246
+copy probs min: 0
+correspond_copy_vocab_probs: [0.163311988 0.836688]
+correspond vocab gen prob (copy max): 5.75900515e-07
+correspond vocab gen prob (copy min): 0.564188361
+Epoch1-train_step146-loss=11.831783
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.457971543
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0339413248 0.966058671]
+correspond vocab gen prob (copy max): 1.70999371e-07
+correspond vocab gen prob (copy min): 0.00530439848
+copy probs max: 0.457971543
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0339413248 0.966058671]
+correspond vocab gen prob (copy max): 1.70999371e-07
+correspond vocab gen prob (copy min): 0.00530439848
+Epoch1-train_step147-loss=11.766237
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.381737769
+correspond_copy_vocab_probs: [0.131597847 0.868402123]
+correspond vocab gen prob (copy max): 1.09552195e-06
+correspond vocab gen prob (copy min): 0.052368816
+copy probs max: 0.381737769
+copy probs min: 0
+correspond_copy_vocab_probs: [0.131597847 0.868402123]
+correspond vocab gen prob (copy max): 1.09552195e-06
+correspond vocab gen prob (copy min): 0.052368816
+Epoch1-train_step148-loss=11.094049
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.300887734
+copy probs min: 0
+correspond_copy_vocab_probs: [0.195301861 0.804698169]
+correspond vocab gen prob (copy max): 1.05027414e-06
+correspond vocab gen prob (copy min): 0.092140466
+copy probs max: 0.300887734
+copy probs min: 0
+correspond_copy_vocab_probs: [0.195301861 0.804698169]
+correspond vocab gen prob (copy max): 1.05027414e-06
+correspond vocab gen prob (copy min): 0.092140466
+Epoch1-train_step149-loss=10.850638
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.693057358
+correspond_copy_vocab_probs: [0.208911628 0.791088402]
+correspond vocab gen prob (copy max): 0.000125858394
+correspond vocab gen prob (copy min): 0.108192123
+copy probs max: 0.693057358
+copy probs min: 0
+correspond_copy_vocab_probs: [0.208911628 0.791088402]
+correspond vocab gen prob (copy max): 0.000125858394
+correspond vocab gen prob (copy min): 0.108192123
+Epoch1-train_step150-loss=12.262579
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.446803659
+copy probs min: 0
+correspond_copy_vocab_probs: [0.136207908 0.863792062]
+correspond vocab gen prob (copy max): 0.00123810454
+correspond vocab gen prob (copy min): 0.0760028586
+copy probs max: 0.446803659
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.0760028586
+correspond vocab gen prob (copy max): 0.00123810454
+correspond_copy_vocab_probs: [0.136207908 0.863792062]
+Epoch1-train_step151-loss=12.078037
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.548325837
+correspond_copy_vocab_probs: [0.184295774 0.815704286]
+correspond vocab gen prob (copy max): 0.00190329831
+correspond vocab gen prob (copy min): 0.52307874
+copy probs max: 0.548325837
+copy probs min: 0
+correspond_copy_vocab_probs: [0.184295774 0.815704286]
+correspond vocab gen prob (copy max): 0.00190329831
+correspond vocab gen prob (copy min): 0.52307874
+Epoch1-train_step152-loss=11.211788
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.368453264
+copy probs min: 0
+correspond vocab gen prob (copy max): 7.16081615e-07
+correspond_copy_vocab_probs: [0.0943093523 0.90569061]
+correspond vocab gen prob (copy min): 0.00443558116
+copy probs min: 0
+copy probs max: 0.368453264
+correspond_copy_vocab_probs: [0.0943093523 0.90569061]
+correspond vocab gen prob (copy max): 7.16081615e-07
+correspond vocab gen prob (copy min): 0.00443558116
+Epoch1-train_step153-loss=11.570348
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.427791595
+copy probs min: 0
+correspond vocab gen prob (copy max): 5.62722732e-07
+correspond_copy_vocab_probs: [0.151215047 0.848785]
+correspond vocab gen prob (copy min): 0.106462084
+copy probs max: 0.427791595
+copy probs min: 0
+correspond_copy_vocab_probs: [0.151215047 0.848785]
+correspond vocab gen prob (copy max): 5.62722732e-07
+correspond vocab gen prob (copy min): 0.106462084
+Epoch1-train_step154-loss=12.299410
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.367297053
+correspond_copy_vocab_probs: [0.190721229 0.809278727]
+correspond vocab gen prob (copy max): 1.2698714e-06
+correspond vocab gen prob (copy min): 0.0846989602
+copy probs min: 0
+copy probs max: 0.367297053
+correspond_copy_vocab_probs: [0.190721229 0.809278727]
+correspond vocab gen prob (copy max): 1.2698714e-06
+correspond vocab gen prob (copy min): 0.0846989602
+Epoch1-train_step155-loss=12.011635
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.412279904
+copy probs min: 0
+correspond_copy_vocab_probs: [0.230226174 0.769773841]
+correspond vocab gen prob (copy max): 9.10597191e-06
+correspond vocab gen prob (copy min): 0.0313039683
+copy probs min: 0
+copy probs max: 0.412279904
+correspond_copy_vocab_probs: [0.230226174 0.769773841]
+correspond vocab gen prob (copy max): 9.10597191e-06
+correspond vocab gen prob (copy min): 0.0313039683
+Epoch1-train_step156-loss=9.627628
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.379233629
+copy probs min: 0
+correspond_copy_vocab_probs: [0.266262621 0.73373735]
+correspond vocab gen prob (copy max): 0.00249769492
+correspond vocab gen prob (copy min): 0.0848923177
+copy probs max: 0.379233629
+copy probs min: 0
+correspond_copy_vocab_probs: [0.266262621 0.73373735]
+correspond vocab gen prob (copy max): 0.00249769492
+correspond vocab gen prob (copy min): 0.0848923177
+Epoch1-train_step157-loss=10.784677
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.410243183
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0480596162 0.951940358]
+correspond vocab gen prob (copy max): 3.29049186e-07
+correspond vocab gen prob (copy min): 0.5202021
+copy probs min: 0
+copy probs max: 0.410243183
+correspond_copy_vocab_probs: [0.0480596162 0.951940358]
+correspond vocab gen prob (copy max): 3.29049186e-07
+correspond vocab gen prob (copy min): 0.5202021
+Epoch1-train_step158-loss=12.879444
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.478785545
+correspond_copy_vocab_probs: [0.17877835 0.82122159]
+correspond vocab gen prob (copy max): 0.00161510811
+correspond vocab gen prob (copy min): 0.0401597209
+copy probs min: 0
+copy probs max: 0.478785545
+correspond_copy_vocab_probs: [0.17877835 0.82122159]
+correspond vocab gen prob (copy max): 0.00161510811
+correspond vocab gen prob (copy min): 0.0401597209
+Epoch1-train_step159-loss=11.040075
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.456139654
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.534598112
+correspond_copy_vocab_probs: [0.222781733 0.777218223]
+correspond vocab gen prob (copy max): 0.0020346723
+copy probs min: 0
+copy probs max: 0.456139654
+correspond_copy_vocab_probs: [0.222781733 0.777218223]
+correspond vocab gen prob (copy max): 0.0020346723
+correspond vocab gen prob (copy min): 0.534598112
+Epoch1-train_step160-loss=10.292952
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.462906
+correspond vocab gen prob (copy max): 4.57909692e-07
+correspond_copy_vocab_probs: [0.231917694 0.768082321]
+correspond vocab gen prob (copy min): 0.529093206
+copy probs max: 0.462906
+copy probs min: 0
+correspond_copy_vocab_probs: [0.231917694 0.768082321]
+correspond vocab gen prob (copy max): 4.57909692e-07
+correspond vocab gen prob (copy min): 0.529093206
+Epoch1-train_step161-loss=12.038877
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.381145954
+correspond vocab gen prob (copy min): 0.00115137268
+correspond vocab gen prob (copy max): 0.00208536303
+correspond_copy_vocab_probs: [0.227444336 0.772555649]
+copy probs max: 0.381145954
+copy probs min: 0
+correspond_copy_vocab_probs: [0.227444336 0.772555649]
+correspond vocab gen prob (copy max): 0.00208536303
+correspond vocab gen prob (copy min): 0.00115137268
+Epoch1-train_step162-loss=10.805336
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.393431038
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0825537145 0.917446315]
+correspond vocab gen prob (copy max): 8.40010102e-07
+correspond vocab gen prob (copy min): 0.529742599
+copy probs max: 0.393431038
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0825537145 0.917446315]
+correspond vocab gen prob (copy max): 8.40010102e-07
+correspond vocab gen prob (copy min): 0.529742599
+Epoch1-train_step163-loss=10.817395
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.419764429
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0920448527 0.90795511]
+correspond vocab gen prob (copy max): 0.000809544639
+correspond vocab gen prob (copy min): 0.0310670398
+copy probs max: 0.419764429
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0920448527 0.90795511]
+correspond vocab gen prob (copy max): 0.000809544639
+correspond vocab gen prob (copy min): 0.0310670398
+Epoch1-train_step164-loss=10.326208
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.395402849
+correspond_copy_vocab_probs: [0.0690107942 0.930989146]
+correspond vocab gen prob (copy max): 0.000626661582
+correspond vocab gen prob (copy min): 0.504956782
+copy probs min: 0
+copy probs max: 0.395402849
+correspond_copy_vocab_probs: [0.0690107942 0.930989146]
+correspond vocab gen prob (copy max): 0.000626661582
+correspond vocab gen prob (copy min): 0.504956782
+Epoch1-train_step165-loss=11.148108
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.45213303
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.09889
+correspond vocab gen prob (copy max): 0.00189054396
+correspond_copy_vocab_probs: [0.196651235 0.80334878]
+copy probs min: 0
+copy probs max: 0.45213303
+correspond_copy_vocab_probs: [0.196651235 0.80334878]
+correspond vocab gen prob (copy max): 0.00189054396
+correspond vocab gen prob (copy min): 0.09889
+Epoch1-train_step166-loss=10.731812
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.548154
+correspond_copy_vocab_probs: [0.0599195734 0.940080404]
+correspond vocab gen prob (copy max): 1.97226527e-05
+correspond vocab gen prob (copy min): 0.499259204
+copy probs max: 0.548154
+copy probs min: 0
+correspond_copy_vocab_probs: [0.0599195734 0.940080404]
+correspond vocab gen prob (copy max): 1.97226527e-05
+correspond vocab gen prob (copy min): 0.499259204
+Epoch1-train_step167-loss=10.404830
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.384825408
+correspond_copy_vocab_probs: [0.195946038 0.804053962]
+correspond vocab gen prob (copy max): 0.0015417228
+correspond vocab gen prob (copy min): 0.493214041
+copy probs min: 0
+copy probs max: 0.384825408
+correspond_copy_vocab_probs: [0.195946038 0.804053962]
+correspond vocab gen prob (copy max): 0.0015417228
+correspond vocab gen prob (copy min): 0.493214041
+Epoch1-train_step168-loss=12.919173
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.392684251
+correspond_copy_vocab_probs: [0.124334179 0.875665843]
+correspond vocab gen prob (copy max): 0.00108866068
+correspond vocab gen prob (copy min): 0.102803037
+copy probs max: 0.392684251
+copy probs min: 0
+correspond_copy_vocab_probs: [0.124334179 0.875665843]
+correspond vocab gen prob (copy max): 0.00108866068
+correspond vocab gen prob (copy min): 0.102803037
+Epoch1-train_step169-loss=11.432037
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.616130769
+correspond_copy_vocab_probs: [0.313591212 0.686408818]
+correspond vocab gen prob (copy max): 0.00314038829
+correspond vocab gen prob (copy min): 0.508891463
+copy probs max: 0.616130769
+copy probs min: 0
+correspond_copy_vocab_probs: [0.313591212 0.686408818]
+correspond vocab gen prob (copy max): 0.00314038829
+correspond vocab gen prob (copy min): 0.508891463
+Epoch1-train_step170-loss=11.790302
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.407333404
+copy probs min: 0
+correspond_copy_vocab_probs: [0.172935501 0.827064514]
+correspond vocab gen prob (copy max): 7.56605971e-07
+correspond vocab gen prob (copy min): 0.109265886
+copy probs max: 0.407333404
+copy probs min: 0
+correspond vocab gen prob (copy min): 0.109265886
+correspond vocab gen prob (copy max): 7.56605971e-07
+correspond_copy_vocab_probs: [0.172935501 0.827064514]
+Epoch1-train_step171-loss=12.206955
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.534303069
+copy probs min: 0
+correspond vocab gen prob (copy max): 2.9398754e-07
+correspond_copy_vocab_probs: [0.177777812 0.822222233]
+correspond vocab gen prob (copy min): 0.1038578
+copy probs max: 0.534303069
+copy probs min: 0
+correspond_copy_vocab_probs: [0.177777812 0.822222233]
+correspond vocab gen prob (copy max): 2.9398754e-07
+correspond vocab gen prob (copy min): 0.1038578
+Epoch1-train_step172-loss=11.705317
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.525687039
+copy probs min: 0
+correspond vocab gen prob (copy max): 0.000986577361
+correspond_copy_vocab_probs: [0.105963729 0.894036233]
+correspond vocab gen prob (copy min): 0.527277291
+copy probs max: 0.525687039
+copy probs min: 0
+correspond_copy_vocab_probs: [0.105963729 0.894036233]
+correspond vocab gen prob (copy max): 0.000986577361
+correspond vocab gen prob (copy min): 0.527277291
+Epoch1-train_step173-loss=11.545410
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.465954423
+correspond vocab gen prob (copy max): 0.00124193833
+correspond_copy_vocab_probs: [0.129043818 0.870956123]
+correspond vocab gen prob (copy min): 0.0724541172
+copy probs max: 0.465954423
+copy probs min: 0
+correspond_copy_vocab_probs: [0.129043818 0.870956123]
+correspond vocab gen prob (copy max): 0.00124193833
+correspond vocab gen prob (copy min): 0.0724541172
+Epoch1-train_step174-loss=11.607253
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.432800591
+copy probs min: 0
+correspond_copy_vocab_probs: [0.509107947 0.490892053]
+correspond vocab gen prob (copy max): 1.4685595e-06
+correspond vocab gen prob (copy min): 0.529355705
+copy probs max: 0.432800591
+copy probs min: 0
+correspond_copy_vocab_probs: [0.509107947 0.490892053]
+correspond vocab gen prob (copy max): 1.4685595e-06
+correspond vocab gen prob (copy min): 0.529355705
+Epoch1-train_step175-loss=10.360764
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.31976068
+copy probs min: 0
+correspond_copy_vocab_probs: [0.277466834 0.722533166]
+correspond vocab gen prob (copy max): 0.00254023611
+correspond vocab gen prob (copy min): 0.533027649
+copy probs max: 0.31976068
+copy probs min: 0
+correspond_copy_vocab_probs: [0.277466834 0.722533166]
+correspond vocab gen prob (copy max): 0.00254023611
+correspond vocab gen prob (copy min): 0.533027649
+Epoch1-train_step176-loss=11.330759
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.589104056
+copy probs min: 0
+correspond_copy_vocab_probs: [0.100249872 0.899750113]
+correspond vocab gen prob (copy max): 2.9077084e-05
+correspond vocab gen prob (copy min): 0.090378955
+copy probs min: 0
+copy probs max: 0.589104056
+correspond_copy_vocab_probs: [0.100249872 0.899750113]
+correspond vocab gen prob (copy max): 2.9077084e-05
+correspond vocab gen prob (copy min): 0.090378955
+Epoch1-train_step177-loss=11.625245
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.457067579
+correspond vocab gen prob (copy max): 1.1778402e-06
+correspond_copy_vocab_probs: [0.0857579857 0.914242089]
+correspond vocab gen prob (copy min): 0.542461753
+copy probs min: 0
+copy probs max: 0.457067579
+correspond_copy_vocab_probs: [0.0857579857 0.914242089]
+correspond vocab gen prob (copy max): 1.1778402e-06
+correspond vocab gen prob (copy min): 0.542461753
+Epoch1-train_step178-loss=10.209671
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs min: 0
+copy probs max: 0.437839
+correspond_copy_vocab_probs: [0.11140056 0.888599455]
+correspond vocab gen prob (copy max): 2.77624594e-07
+correspond vocab gen prob (copy min): 0.00304320524
+copy probs max: 0.437839
+copy probs min: 0
+correspond_copy_vocab_probs: [0.11140056 0.888599455]
+correspond vocab gen prob (copy max): 2.77624594e-07
+correspond vocab gen prob (copy min): 0.00304320524
+Epoch1-train_step179-loss=9.484459
+current dev bleu: 0
+pretrain dev bleu: -1
+l2 weight: 3e-05  best dev bleu: 0
+****************************************************************
+
+
+RL Training Start !
+copy probs max: 0.724007
+copy probs min: 0
+correspond_copy_vocab_probs: [0.134187356 0.865812659]
+correspond vocab gen prob (copy max): 0.00152156281
+correspond vocab gen prob (copy min): 0.572360218

@@ -1,0 +1,7 @@
+OTHER	0
+cmp_op	1
+column_name	2
+cond_expr	3
+string	4
+agg_op	5
+stmt	6

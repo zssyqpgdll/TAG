@@ -1,0 +1,28 @@
+后处理进一步的：
+1. gold: schools predict: school[SEP]/[SEP]club[SEP]/[SEP]team
+2. gold: what are the nationalities predict: what is the nationality
+3. gold: what ' s predict: what is 
+4. gold: how many schools or teams predict: how many school[SEP]/[SEP]club[SEP] team
+5. gold: which wrestlers predict: who is the wrestler
+
+gold: how many significant[SEP]relationship relationships list will as a virtue
+
+预测时候把连续相同的多个多单词合并成一个
+按separator 把多单词split成多个子单词
+多对一的情况?
+
+现在是pointer 到 一个节点（school / club team），那么在词典中实际是选 school[SEP]/[SEP]club[SEP]team这个词
+
+unk 很多，是pointer network没学到？
+
+min_freq=1, 67788, 50241
+min_freq=4, 11416, 7437
+
+
+构造词典（大粒度）：
+每个节点作为一个单词，多单词的情况下用[SEP]连接，然后对target label中存在这个节点词或者子词的进行替换
+例如，树节点中是 school / club team
+target label是 how many school in the xxx ? 替换成 how many school / club team in the xxx ? 这样是修改了label，使得和baseline评测的状况有一些不一致，而且词典的分割情况也和baseline时的不同
+
+构造词典（小粒度）：
+还是按原来的词典分割，每个节点还是包含多单词，只是训练时候，如果某个树节点的单词包含有target label的某些词，则针对这些词训练pointer network，使得当decode 这些词的时候指向树的这些包含它的节点
