@@ -918,9 +918,9 @@ if __name__== '__main__':
 
     parser = argparse.ArgumentParser()
 
-    data_config = get_data_config('conala', trainset='train', devset='dev', testset='test')
+    # data_config = get_data_config('conala', trainset='train', devset='dev', testset='test')
     # data_config = get_data_config('atis', trainset='train', devset='dev', testset='test')
-    # data_config = get_data_config('wikisql', trainset='train', devset='dev', testset='test')
+    data_config = get_data_config('wikisql', trainset='train', devset='dev', testset='test')
 
     add_arguments(parser, data_config)
     params = parser.parse_args()

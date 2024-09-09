@@ -97,7 +97,7 @@ pythhon main.py --mode test
 See the predicted file through:
 
 ```bash
-vim ../data/wikisql_asdl_original_json_tree_with_type&seq3/tree2seq_copy_output/output4.test
+vim ../data/atis_asdl_original_json_tree_with_type&seq/tree2seq_copy_output/output4.test
 ```
 
 An example is provided below:
